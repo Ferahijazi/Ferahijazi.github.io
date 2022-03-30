@@ -38,6 +38,8 @@ Ways of Planning Your Design
 ![]({{ site.baseurl }}/images/Leaf.png)
 *Biomimicry in Architecture, p.48*
 
+
+
  
 
 
