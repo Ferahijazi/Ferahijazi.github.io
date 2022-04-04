@@ -8,7 +8,7 @@ tags:   First Post
 
 
 
-__Defining Goals & Setting up a website.__ First week at Waag and trying to figure out how to work with *<span style="color:DarkMagenta">github</span>, <span style="color:GoldenRod">jekyll</span>, <span style="color:LightSeaGreen">terminal</span> and getting familirized with some basic coding!* The goal was to create a website in order to document my journey at Fablab. I looked into what the fablab academy students are up to and followed their steps!
+__Defining Goals & Setting up a website.__ First week at Waag and trying to figure out how to work with *<span style="color:DarkMagenta">github</span>, <span style="color:GoldenRod">jekyll</span>, <span style="color:LightSeaGreen">terminal</span>* and getting familirized with some basic coding! The goal was to create a website in order to document my journey at Fablab. I looked into what the fablab academy students are up to and followed their steps!
 
 ## Goals for this week
 
