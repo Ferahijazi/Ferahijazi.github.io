@@ -30,6 +30,8 @@ Ways of Planning Your Design
 ![]({{ site.baseurl }}/images/Headphone_2022-Mar-30_11-39-16AM-000_CustomizedView2606084008.png)
 *Rendered Headsets*
 
+---
+
 ### Getting Inspired by Nature
 
 
