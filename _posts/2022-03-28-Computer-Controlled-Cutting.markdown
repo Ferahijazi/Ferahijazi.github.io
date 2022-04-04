@@ -9,22 +9,22 @@ tags:   Third Post
 
 
 
-## 
+## Fusion 360 & Preparation for Laser Cutting
 
 
 
-### 
+### 3D PRINTING
+
+* Insure that all measurements are in metric
 
 
 
-* 
-* 
-*
 
 
 
-![]({{ site.baseurl }}/images/07.jpg)
-*Minimalism*
+
+![]({{ site.baseurl }}/images/metric.png)
+*Preferences*
 
 
 

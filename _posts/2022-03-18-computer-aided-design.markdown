@@ -2,7 +2,7 @@
 layout: post
 title: Computer Aided Design
 date:  2022-03-18
-image: Headphone_2022-Mar-30_11-39-16AM-000_CustomizedView2606084008.png
+image: /headset.png
 tags:  Second Post
 ---
 
@@ -26,6 +26,9 @@ Ways of Planning Your Design
 
 * Sketch on paper and insert the sketch as a reference for your model.
 
+
+![]({{ site.baseurl }}/images/Headphone_2022-Mar-30_11-39-16AM-000_CustomizedView2606084008.png)
+*Rendered Headsets*
 
 ### Getting Inspired by Nature
 
