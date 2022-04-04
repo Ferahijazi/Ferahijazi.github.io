@@ -60,7 +60,7 @@ I had to also familiarized myself with a lot of new terminology since I had no p
 
 #### Install Ruby
 
-12.   Type code 
+10.   Type code 
 
 ![]({{ site.baseurl }}/images/code_3.png)
 
@@ -72,23 +72,23 @@ macOS comes with a pre-installed version of Ruby
 *what is Xcode? tools needed to create an app… project management tools + solve problems
 IDE - integrated development environment *
 
-13. Type code 
+11. Type code 
 
 ![]({{ site.baseurl }}/images/code_4.png)
 
-14. Copy 
+12. Copy 
 
 ![]({{ site.baseurl }}/images/code_5.png)
 
 *why do we do that? so that when we run jekyll, it will first look for what is in its path and its going to look for the first one which in default mode is the macOS one yet we want it to find the ruby 3.0*
 
-15. Seeing no error is a good sign, type clear and enter
+13. Seeing no error is a good sign, type clear and enter
 
-16. Type
+14. Type
 
 ![]({{ site.baseurl }}/images/code_6.png) 
 
-17. quit terminal and come back in and check that ruby 3.0 is now the version running!
+15. quit terminal and come back in and check that ruby 3.0 is now the version running!
 
 #### Install Bundler & Jekyll
 
