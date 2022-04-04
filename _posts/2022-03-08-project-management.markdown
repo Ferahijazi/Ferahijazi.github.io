@@ -52,15 +52,15 @@ I had to also familiarized myself with a lot of new terminology since I had no p
 
 ![]({{ site.baseurl }}/images/code-1.png)
 
-8. press enter, if everything is working properly you won’t get any error messages. 
+8. Press enter, if everything is working properly you won’t get any error messages. 
 
-9. second line: 
+9. Second line: 
 
 ![]({{ site.baseurl }}/images/code_2.png)
 
 #### Install Ruby
 
-10.   Type code 
+10. Type code 
 
 ![]({{ site.baseurl }}/images/code_3.png)
 

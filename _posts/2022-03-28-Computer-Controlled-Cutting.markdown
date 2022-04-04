@@ -2,7 +2,7 @@
 layout: post
 title:  Computer Controlled Cutting
 date:   2022-03-28
-image:  
+image:  /front_view.png
 tags:   Third Post
 ---
 
