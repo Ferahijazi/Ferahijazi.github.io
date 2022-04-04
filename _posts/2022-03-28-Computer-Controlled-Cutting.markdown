@@ -17,14 +17,10 @@ tags:   Third Post
 
 * Insure that all measurements are in metric
 
-
-
-
-
-
-
 ![]({{ site.baseurl }}/images/metric.png)
 *Preferences*
+
+* When exporting, export as an STL file 
 
 
 
