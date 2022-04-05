@@ -9,6 +9,9 @@ tags:   Third Post
 ![]({{ site.baseurl }}/images/lamp_final.jpeg)
 *Assembled lampshade!*
 
+![]({{ site.baseurl }}/images/lampshade_lit.jpeg)
+*Tested it out at home*
+
 
 
 
