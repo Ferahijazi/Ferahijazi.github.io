@@ -1,0 +1,25 @@
+I"±<h2 id="fusion-360-preparation-for-3d-printing--laser-cutting">Fusion 360, Preparation for 3D Printing &amp; Laser Cutting</h2>
+
+<h2 id="laset-cutter">Laset Cutter</h2>
+
+<p>Export to DXF, make sure you got the right thickness for your drawings. Test out the thickness of the material you intend to use and adjust accordingly!</p>
+
+<p><img src="/images/laser_cutter_07-measuring_caliper.jpeg" alt="" /></p>
+
+<hr />
+
+<h3 id="3d-printing">3D PRINTING</h3>
+
+<ul>
+  <li>Insure that all measurements are in metric</li>
+</ul>
+
+<p><img src="/images/metric.png" alt="" />
+<em>Preferences</em></p>
+
+<ul>
+  <li>When exporting, export as an STL file</li>
+  <li>Import to Autocad MeshMixer</li>
+</ul>
+
+:ET

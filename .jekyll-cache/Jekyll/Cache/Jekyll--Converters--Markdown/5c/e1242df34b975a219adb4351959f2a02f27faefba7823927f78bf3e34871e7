@@ -1,0 +1,56 @@
+I"†<h2 id="fusion-360-preparation-for-3d-printing--laser-cutting">Fusion 360, Preparation for 3D Printing &amp; Laser Cutting</h2>
+
+<hr />
+
+<h2 id="laset-cutter">Laset Cutter</h2>
+
+<hr />
+
+<ol>
+  <li>Save sketches as DXF, make sure you got the right thickness for your drawings.</li>
+</ol>
+
+<p><img src="/images/Save_As_DXF.png" alt="" /></p>
+
+<hr />
+
+<p><img src="/images/laser_cutter_07-measuring_caliper.jpeg" alt="" /></p>
+<ul>
+  <li>Measure the thickness of the material you intend to use and adjust accordingly!*</li>
+</ul>
+
+<ol>
+  <li>Switch on the laser cutter</li>
+</ol>
+
+<p><img src="/images/laser_cuter_switch_head.jpeg" alt="" /></p>
+
+<ol>
+  <li>Go to lightroom and open your file there.</li>
+</ol>
+
+<p><img src="/images/laser_cutter_importing_files.jpeg" alt="" /></p>
+
+<ol>
+  <li>Set job origin</li>
+</ol>
+
+<p><img src="/images/laser cutter_01.jpeg" alt="" /></p>
+
+<hr />
+
+<h3 id="3d-printing">3D PRINTING</h3>
+
+<ul>
+  <li>Insure that all measurements are in metric</li>
+</ul>
+
+<p><img src="/images/metric.png" alt="" />
+<em>Preferences</em></p>
+
+<ul>
+  <li>When exporting, export as an STL file</li>
+  <li>Import to Autocad MeshMixer</li>
+</ul>
+
+:ET
