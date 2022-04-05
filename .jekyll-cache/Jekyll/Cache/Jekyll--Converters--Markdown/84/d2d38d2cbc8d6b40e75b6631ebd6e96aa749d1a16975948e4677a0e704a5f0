@@ -1,0 +1,140 @@
+I"<p><img src="/images/lamp.jpeg" alt="" />
+<em>Assembled lampshade!</em></p>
+
+<hr />
+
+<h2 id="laser-cutter">Laser Cutter</h2>
+
+<hr />
+
+<ul>
+  <li>Save sketches as DXF, make sure you got the right thickness for your drawings.</li>
+</ul>
+
+<p><img src="/images/Save_As_DXF.png" alt="" /></p>
+
+<hr />
+
+<p><img src="/images/laser_cutter_07-measuring_caliper.jpeg" alt="" />
+<em>Measure the thickness of the material you intend to use and adjust accordingly</em></p>
+
+<hr />
+
+<ul>
+  <li>Turn on laser cutter (1 &amp; 2)</li>
+</ul>
+
+<p><img src="/images/laser_cutter_09_switch.jpeg" alt="" /></p>
+
+<hr />
+
+<ul>
+  <li>Place your material inside the printer, use tape, weights, what is needed to keep it flattened.</li>
+</ul>
+
+<p><img src="/images/laser_cutter_adding bricks.jpeg" alt="" /></p>
+
+<hr />
+
+<ul>
+  <li>Fix the tip of the laser pen, counter clock wise to loosen it and clock wise to tighten it</li>
+</ul>
+
+<p><img src="/images/laser_cutter_adjusting the tip.jpeg" alt="" />
+<em>adjusting the tip</em></p>
+
+<hr />
+
+<ul>
+  <li>Go to lightroom and open your file there.</li>
+</ul>
+
+<p><img src="/images/laser_cutter_importing_files.jpeg" alt="" /></p>
+
+<hr />
+
+<ul>
+  <li>Set job origin</li>
+</ul>
+
+<p><img src="/images/laser cutter_01.jpeg" alt="" /></p>
+
+<hr />
+
+<ul>
+  <li>Check if there are open objects and if necessary close them!</li>
+</ul>
+
+<p><img src="/images/laser_cutter_close_open_objects.jpeg" alt="" /></p>
+
+<hr />
+
+<ul>
+  <li>If the file is not as you intended for it to be, you can do some fixes, for example, with boolean tools, joining objects, grouping, etc…</li>
+</ul>
+
+<p><img src="/images/laser_Cutter_join_objects.jpeg" alt="" /></p>
+
+<hr />
+
+<ul>
+  <li>Adjust the speed and power of the laser cutter, you can check the templates hung on the wall to see what is appropriate</li>
+</ul>
+
+<p><img src="/images/laser_cutter_speed_power.jpeg" alt="" /></p>
+
+<hr />
+
+<ul>
+  <li>Switch on the laser cutter (3)</li>
+</ul>
+
+<p><img src="/images/laser_cuter_switch_head.jpeg" alt="" /></p>
+
+<hr />
+
+<ul>
+  <li>Turn on the fan</li>
+</ul>
+
+<p><img src="/images/laser_cutter_fan.jpeg" alt="" /></p>
+
+<hr />
+
+<ul>
+  <li>Make sure the origin is set correctly, press frame to test out</li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>Press Play! after the machine is done cutting, wait a bit before opening it, if it starts burning, stop or pause and use the water sprinkler to cool it down.</li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>If necessary offset the objects (after testing out)</li>
+</ul>
+
+<p><img src="/images/laser_cutter_offset.jpeg" alt="" /></p>
+
+<hr />
+
+<hr />
+
+<h3 id="3d-printing">3D PRINTING</h3>
+
+<ul>
+  <li>Insure that all measurements are in metric</li>
+</ul>
+
+<p><img src="/images/metric.png" alt="" />
+<em>Preferences</em></p>
+
+<ul>
+  <li>When exporting, export as an STL file</li>
+  <li>Import to Autocad MeshMixer</li>
+</ul>
+
+:ET
