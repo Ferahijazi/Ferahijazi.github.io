@@ -6,7 +6,7 @@ image:  /front_view.png
 tags:   Third Post
 ---
 
-![]({{ site.baseurl }}/images/lamp.jpeg)
+![]({{ site.baseurl }}/images/lamp_final.jpeg)
 *Assembled lampshade!*
 
 
