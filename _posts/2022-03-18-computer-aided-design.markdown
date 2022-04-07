@@ -47,12 +47,19 @@ Ways of Planning Your Design
 
 ---
 
-## Side Hussel 
+### Side Hussel 
 
 Hazel & I prepared some molds by cutting and melting blocks of acrylic then putting them inside containers
 
 ![]({{ site.baseurl }}/images/melting_01.jpg)
 *Some dangerous cooking*
+
+---
+
+Going through last year's fab academy documentation, I really liked this tutorial using Cuttle
+<https://fabacademy.org/2021/labs/waag/students/nadieh-bremer/blog/week-3/>
+
+It looks cool because it allows you to prepare complex geometric shapes easily for the laser cutter, it's online and for free! 
 
  
 
