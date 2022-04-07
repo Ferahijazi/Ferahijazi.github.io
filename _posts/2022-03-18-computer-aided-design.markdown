@@ -40,10 +40,19 @@ Ways of Planning Your Design
 
 
 
+
+
 ![]({{ site.baseurl }}/images/Leaf.png)
 *Biomimicry in Architecture, p.48*
 
+---
 
+Side hussels 
+
+Hazel & I prepared some molds by cutting and melting blocks of acrylic then putting them inside containers
+
+![]({{ site.baseurl }}/images/melting_01.jpg)
+*Some dangerous cooking*
 
  
 
