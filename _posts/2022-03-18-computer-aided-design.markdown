@@ -47,7 +47,7 @@ Ways of Planning Your Design
 
 ---
 
-### Side Hussel 
+### Side Hustle 
 
 Hazel & I prepared some molds by cutting and melting blocks of acrylic then putting them inside containers
 
