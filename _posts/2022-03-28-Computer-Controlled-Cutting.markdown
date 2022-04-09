@@ -109,6 +109,18 @@ tags:   Third Post
 
 ---
 
+## Side Hustle
+
+Learning a bit of coding, I started watching the course called Training Code on youtube, getting into processing!
+
+<https://www.youtube.com/channel/UCvjgXvBlbQiydffZU7m1_aw>
+
+* Setup & Draw
+* Variables
+* If/else statements
+* Random
+* AND OR NOT
+* Boolean expressions
 
 
 
@@ -125,15 +137,24 @@ tags:   Third Post
 
 ---
 
-### 3D PRINTING
+### 3D SCANNING & PRINTING
 
-* Insure that all measurements are in metric
+We scanned our faces for fun! We used a program called Sense, you have to hold very still while being scanned.
+
+* Once your face is there, you can make adjustments such as erase and trim and then press Solidify 
+
+ * Finish and Export as an OBJ file 
+ * Choose your filament + determine which printer you will be using depending on the size
+ * Printer settings/configuration assistant, we chose  Prusa i3 MK3S & MK3S+ (0.4 mm nozzle) and Other vendors, choose Creality FFF & Ultimaker FFF
+ * Import the file into PrusaSlicer on your laptop 
+ * 
+ * You can make necessary adjustments before slicing such as scaling and resizing, depending on what you're printing, you might need to paint on supports using the brush tool
 
 ![]({{ site.baseurl }}/images/metric.png)
 *Preferences*
 
-* When exporting, export as an STL file 
-* Import to Autocad MeshMixer
+* 
+* 
 
 
 
