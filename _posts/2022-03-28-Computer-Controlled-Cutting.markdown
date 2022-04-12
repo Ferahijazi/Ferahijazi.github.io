@@ -141,6 +141,11 @@ Learning a bit of coding, I started watching the course called Training Code on 
 
 We scanned our faces for fun! We used a program called Sense, you have to hold very still while being scanned.
 
+* First, choose your fillament and which type of printer you are going to use based on the desired size of your print, also keep in mind the bigger it is the longer it takes!
+
+![]({{ site.baseurl }}/images/fillament_choosing.jpeg)
+
+
 * Once your face is there, you can make adjustments such as erase and trim and then press Solidify 
 
  * Finish and Export as an OBJ file 
