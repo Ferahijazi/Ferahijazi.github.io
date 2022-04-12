@@ -1,51 +1,120 @@
 ---
 layout: post
-title:  Moving to a new place
-date:   2018-07-05 15:01:35 +0300
-image:  05.jpg
-tags:   Home
+title:  Vinyl Cutting
+date:   2022-04-12 
+image:  /iron_one.jpg
+tags:   Fifth_Post
 ---
-Yeah, and if you were the pope they'd be all, "Straighten your pope hat." And "Put on your good vestments." Noooooo! Perhaps, but perhaps your civilization is merely the sewer of an even greater society above you!
 
-You lived before you met me?! Ow, my spirit! Humans dating robots is sick. __You people wonder why I'm still single?__ *It's 'cause all the fine robot sisters are dating humans!* I guess if you want children beaten, you have to do it yourself.
+## Experimenting with Cuttle
 
-## Are you crazy? I can't swallow that.
+![]({{ site.baseurl }}/images/playing_around.png)
+*Created a shape using rotational repeat, grouping in the same path* 
 
-Oh, I don't have time for this. I have to go and buy a single piece of fruit with a coupon and then return it, making people wait behind me while I complain. Meh. So, how 'bout them Knicks? Also Zoidberg.
+## Vinyl Cutter
 
-1. We need rest. The spirit is willing, but the flesh is spongy and bruised.
-2. Fry, we have a crate to deliver.
-3. Have you ever tried just turning off the TV, sitting down with your children, and hitting them?
+* Export file as SVG
+* Go to terminal and type
 
-### Why not indeed!
+![]({{ site.baseurl }}/images/Terminal_cd_right_one.jpg)
+*Terminal cd*
 
-Nay, I respect and admire Harold Zoid too much to beat him to death with his own Oscar. I don't 'need' to drink. I can quit anytime I want! Soothe us with sweet lies. Bender?! You stole the atom. You don't know how to do any of those.
+* Then type in terminal
+*Terminal bash mods*
 
-* Shinier than yours, meatbag.
-* This is the worst part. The calm before the battle.
-* Ooh, name it after me!
+![]({{ site.baseurl }}/images/Terminal_start.jpg)
 
-Say what? Throw her in the brig. Hey, you add a one and two zeros to that or we walk! You guys aren't Santa! You're not even robots. How dare you lie in front of Jesus? Ow, my spirit! Who's brave enough to fly into something we all keep calling a death sphere?
+* On the computer, to the upper left side click programs
 
-Hey, you add a one and two zeros to that or we walk! You won't have time for sleeping, soldier, not with all the bed making you'll be doing. It's okay, Bender. I like cooking too. Hey, what kinda party is this? There's no booze and only one hooker.
+![]({{ site.baseurl }}/images/Left_square_program.png)
 
-![]({{ site.baseurl }}/images/07.jpg)
-*Minimalism*
+* Choose CUT
 
-Ummm…to eBay? But I know you in the future. I cleaned your poop. I'm just glad my fat, ugly mama isn't alive to see this day. My fellow Earthicans, as I have explained in my book 'Earth in the Balance'', and the much more popular ''Harry Potter and the Balance of Earth', we need to defend our planet against pollution. Also dark wizards.
+![]({{ site.baseurl }}/images/Program_cut.jpg)
 
-Your best is an idiot! Fry, you can't just sit here in the dark listening to classical music. And remember, don't do anything that affects anything, unless it turns out you were supposed to, in which case, for the love of God, don't not do it!
+* Turn on the Vinyl Cutter
 
-You, a bobsleder!? That I'd like to see! I'm Santa Claus! There's no part of that sentence I didn't like! Noooooo! I can explain. It's very valuable.
+![]({{ site.baseurl }}/images/Power_on.jpg)
 
-I'm Santa Claus! Is the Space Pope reptilian!? Who's brave enough to fly into something we all keep calling a death sphere? I had more, but you go ahead.
+* Select SVG file
 
-It doesn't look so shiny to me. Kif might! You guys aren't Santa! You're not even robots. How dare you lie in front of Jesus? Oh, but you can. But you may have to metaphorically make a deal with the devil. And by "devil", I mean Robot Devil. And by "metaphorically", I mean get your coat.
+![]({{ site.baseurl }}images/Select_SVG_FILE.jpg)
 
-Check it out, y'all. Everyone who was invited is here. Anyone who laughs is a communist! You're going to do his laundry? Michelle, I don't regret this, but I both rue and lament it.
+* Fablab, media, find your file there
 
-Bender, we're trying our best. I daresay that Fry has discovered the smelliest object in the known universe! Oh, you're a dollar naughtier than most. Hi, I'm a naughty nurse, and I really need someone to talk to. $9.95 a minute.
+![]({{ site.baseurl }}images/File_Media.png)
 
-You, a bobsleder!? That I'd like to see! No! The kind with looting and maybe starting a few fires! Good news, everyone! There's a report on TV with some very bad news! When I was first asked to make a film about my nephew, Hubert Farnsworth, I thought "Why should I?" Then later, Leela made the film. But if I did make it, you can bet there would have been more topless women on motorcycles. Roll film!
+* Adjust units
 
-Eeeee! Now say "nuclear wessels"! Why did you bring us here? Yeah, and if you were the pope they'd be all, "Straighten your pope hat." And "Put on your good vestments." That's the ONLY thing about being a slave.
+![]({{ site.baseurl }}/images/Units.jpg)
+
+* Adjust Threshold
+
+![]({{ site.baseurl }}/images/Threshold.jpg)
+
+* Calculate
+
+![]({{ site.baseurl }}/images/Calculate.jpg)
+
+* If you face some problems with the lines, open the file in inkscape and adjust the margins  and lock them
+
+![]({{ site.baseurl }}/images/Margins_lock.jpg)
+
+* Then adjust the spacing of the margins to 2
+
+![]({{ site.baseurl }}/images/Margins_spacing_2.jpg)
+
+* Then add a fill
+
+![]({{ site.baseurl }}/images/Ink_scape_fill.jpg)
+
+* Choose your sticker or other material(that needs ironing)
+
+![]({{ site.baseurl }}/images/Choosing_stickers.jpg)
+
+* Place your material, if its a sticker keep the chosen side up, if its the other material keep the chosen side down.
+
+![]({{ site.baseurl }}/images/adjuting_stick.jpg)
+
+* Lift the handel to open it
+
+![]({{ site.baseurl }}/images/handel_down.jpg)
+
+* Place the sticker between two white lines
+
+![]({{ site.baseurl }}/images/sticker_between_two_white_lines.jpg)
+
+*  Lift the handel up again
+
+![]({{ site.baseurl }}/images/handel_lifted.jpg)
+
+* Choose face
+
+![]({{ site.baseurl }}/images/Choose_face.jpg)
+
+* Press the left and right to adjust origin
+
+![]({{ site.baseurl }}/images/fixing_origin.png)
+
+* Adjust force and speed, you can also cut test to see if its ok, if not, apply more force if necessary, usually 50 is good but it depends on the thickness of the material
+
+![]({{ site.baseurl }}/images/force_speed.jpg)
+
+* Send file to print and you're done!
+
+Keep in mind that origin placed on the left side works better!
+
+
+--- 
+
+## I also tried this dolphin shape as a sticker! 
+
+![]({{ site.baseurl }}/images/Dolphin_sticker.jpg)
+*Dolphin stickers on my notebook*
+
+
+
+
+
+
+
