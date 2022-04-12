@@ -72,7 +72,7 @@ tags:   Fifth_Post
 
 ![]({{ site.baseurl }}/images/Choosing_stickers.jpg)
 
-* Place your material, if its a sticker keep the chosen side up, if its the other material keep the chosen side down.
+* Place your material, if its a sticker keep the chosen side up, if its thermal vinyl keep the chosen side down.
 
 ![]({{ site.baseurl }}/images/adjuting_stick.jpg)
 
@@ -111,6 +111,23 @@ Keep in mind that origin placed on the left side works better!
 
 ![]({{ site.baseurl }}/images/Dolphin_sticker.jpg)
 *Dolphin stickers on my notebook*
+
+---
+
+Ironing your thermal vinyl sticker
+
+* Turn on the machine
+* Make sure there is baking paper on both sides
+* Don't use material like zippers or buttons, fabric is okay
+* Choose the right temperature for your material, use google to help and for the timing choose 20 seconds
+* place your fabric and on top of it the thermal vinyl sticker between the baking sheets
+* Press play
+* lift the handle down when it beeps
+* lift it back up after 20 minutes are done!
+* and it's ready!
+
+![]({{ site.baseurl }}/images/ironed_thermal_vinyl.jpeg)
+*Ironed pattern*
 
 
 
