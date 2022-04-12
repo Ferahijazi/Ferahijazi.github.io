@@ -127,7 +127,7 @@ Ironing your thermal vinyl sticker
 * and it's ready!
 
 ![]({{ site.baseurl }}/images/ironed_thermal_vinyl.jpeg)
-*Ironed pattern*
+*Ironed pattern on fabric*
 
 
 
