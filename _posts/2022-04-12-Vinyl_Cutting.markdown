@@ -3,7 +3,7 @@ layout: post
 title:  Vinyl Cutting
 date:   2022-04-12 
 image:  /iron_one.jpg
-tags:   Fifth_Post
+tags:   Fifth Post
 ---
 
 ## Experimenting with Cuttle
@@ -122,8 +122,8 @@ Ironing your thermal vinyl sticker
 * Choose the right temperature for your material, use google to help and for the timing choose 20 seconds
 * place your fabric and on top of it the thermal vinyl sticker between the baking sheets
 * Press play
-* lift the handle down when it beeps
-* lift it back up after 20 minutes are done!
+* Lift the handle down when it beeps
+* Lift it back up after 20 minutes are done!
 * and it's ready!
 
 ![]({{ site.baseurl }}/images/ironed_thermal_vinyl.jpeg)

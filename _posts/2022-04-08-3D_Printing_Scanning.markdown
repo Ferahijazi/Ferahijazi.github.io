@@ -3,7 +3,7 @@ layout: post
 title:  3D Scanning &    Printing
 date:   2022-04-08
 image:  /3d_print_my_face.jpeg
-tags:   Forth_Post
+tags:   Forth Post
 ---
 
 We scanned our faces for fun! We used a device called Sense, you have to hold very still while being scanned.
