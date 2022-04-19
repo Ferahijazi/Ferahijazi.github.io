@@ -14,7 +14,7 @@ tags:   Fifth Post
 
 ![]({{ site.baseurl }}/images/parametric.png)
 
-*I started with a few ones and add more during the design process* 
+*I started with a few ones and added more during the design process* 
 
 * I started off with assigning the paramters using change >> modify parameters 
 
