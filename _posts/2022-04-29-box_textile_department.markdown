@@ -5,6 +5,11 @@ date:   2022-04-19
 image:  farah.jpg
 tags:   Fifth Post
 ---
+![]({{ site.baseurl }}/images/boxjes.jpeg)
+*Boxes being used at a workshop*
+
+
+
 
 # Preparing the box with Fusion 360
 ---
