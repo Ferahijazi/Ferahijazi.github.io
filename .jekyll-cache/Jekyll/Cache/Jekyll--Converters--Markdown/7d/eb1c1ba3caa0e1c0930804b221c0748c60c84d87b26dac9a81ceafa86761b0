@@ -1,0 +1,47 @@
+I"r<p>I began with watching an introduction to what electrcity is, how it works and what units are important to understand.</p>
+
+<h3 id="some-basics">Some basics:</h3>
+
+<ul>
+  <li>
+    <p>Electricity is the type of energy that can be built up in one place or flow from one place to another</p>
+  </li>
+  <li>
+    <p>Static electric charges is energy gathered in one place.</p>
+  </li>
+  <li>
+    <p><em>Current electricity</em> is energy that flows from one place to another.</p>
+  </li>
+  <li>
+    <p><em>Current</em> is the form of electricity which makes all our electronic gadgets work, when charges are able to constantly flow, dynamic, charges are always on the move.</p>
+  </li>
+  <li>
+    <p>DC current : the flow of electrons stays in the same direction and the voltage stays the same.</p>
+  </li>
+  <li>
+    <p><em>AC current</em> : the flow of electrons changes &amp; the voltage does not stay the same</p>
+  </li>
+  <li>
+    <p><em>Voltage</em> is a force which makes electrons move through a wire.</p>
+  </li>
+</ul>
+
+<p><img src="/images/VIR.png" alt="" />
+<em>Electricity Introduction</em></p>
+
+<ul>
+  <li>Voltage <em>V</em></li>
+  <li>Current <em>A</em> or <em>I</em></li>
+  <li>Resistance <em>ohms</em></li>
+</ul>
+
+<p>V = I * R
+R = V/I
+I = V/R</p>
+
+<p><img src="/images/types_of_resistance.png" alt="" />
+<em>Resistance can be formed in series or in parallel</em></p>
+
+<h2>#</h2>
+
+:ET

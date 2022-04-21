@@ -1,0 +1,103 @@
+I"=<p>I began with watching an introduction to what electrcity is, how it works and what units are important to understand.</p>
+
+<h3 id="some-basics">Some basics:</h3>
+
+<ul>
+  <li>
+    <p>Electricity is the type of energy that can be built up in one place or flow from one place to another</p>
+  </li>
+  <li>
+    <p>Static electric charges is energy gathered in one place.</p>
+  </li>
+  <li>
+    <p><em>Current electricity</em> is energy that flows from one place to another.</p>
+  </li>
+  <li>
+    <p><em>Current</em> is the form of electricity which makes all our electronic gadgets work, when charges are able to constantly flow, dynamic, charges are always on the move.</p>
+  </li>
+  <li>
+    <p>DC current : the flow of electrons stays in the same direction and the voltage stays the same.</p>
+  </li>
+  <li>
+    <p><em>AC current</em> : the flow of electrons changes &amp; the voltage does not stay the same</p>
+  </li>
+  <li>
+    <p><em>Voltage</em> is a force which makes electrons move through a wire.</p>
+  </li>
+</ul>
+
+<p><img src="/images/VIR.png" alt="" />
+<em>Electricity Introduction</em></p>
+
+<ul>
+  <li>Voltage <em>V</em></li>
+  <li>Current <em>A</em> or <em>I</em></li>
+  <li>Resistance <em>ohms</em></li>
+</ul>
+
+<p>V = I * R
+R = V/I
+I = V/R</p>
+
+<p><img src="/images/types_of_resistance.png" alt="" />
+<em>Resistance can be formed in series or in parallel</em></p>
+
+<hr />
+
+<h3 id="microprocessor--microcontroller">Microprocessor &amp; Microcontroller</h3>
+
+<ul>
+  <li>
+    <h2 id="microprocessor-is-known-as-the-brain-of-any-computer">Microprocessor is known as the brain of any computer</h2>
+  </li>
+</ul>
+
+<h5 id="ide">IDE</h5>
+
+<hr />
+
+<h5 id="breadboard">Breadboard</h5>
+
+<hr />
+
+<h4 id="input-devices--sensors">Input Devices &amp; Sensors</h4>
+
+<p>A sensor basically give data to the arduino, it gives information to the controller by changing its voltage</p>
+
+<hr />
+
+<p>Some examples</p>
+
+<p><img src="/images/Pontimeter.png" alt="" />
+<em>Rotatory Potentiometer: This device would change the resistance it offers if we rotate the knob clockwise or anti-clocwise</em></p>
+
+<p><img src="/images/Momentary Push Button.png" alt="" />
+<em>Momentary Push Button Switch: When we press the switch it will close the circuit and when we release the switch it will open the circuit</em></p>
+
+<p><em>Sound &amp; Microphone Sensor</em>
+<em>Touch Sensor</em>
+<em>Rotary Encoder</em>
+<em>Ultrasonic Distance Sensor</em>
+<em>Infrared Sensor</em>
+<em>Temp &amp; Humidity Sensor</em>
+<em>Light Dependant Resistor</em></p>
+
+<hr />
+
+<h3 id="output-devices">Output Devices</h3>
+
+<hr />
+
+<h3 id="analog--digital">Analog &amp; Digital</h3>
+
+<hr />
+
+<h4 id="analog--digital-signals">Analog &amp; Digital Signals</h4>
+
+<p><img src="/images/analog_signal.png" alt="" />
+<em>Analog Signal</em></p>
+
+<p><img src="/images/digital_signal.png" alt="" />
+<em>Digital Signal</em></p>
+
+:ET
