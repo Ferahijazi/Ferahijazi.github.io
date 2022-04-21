@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Arduins & Electronics!
+title:  Arduino & Electronics!
 date:   2022-04-20
 image:  
 tags:   Arduino Electricity 
@@ -97,5 +97,33 @@ Some examples
 ![]({{ site.baseurl }}/images/digital_signal.png)
 *Digital Signal*
 
+![]({{ site.baseurl }}/images/digitalanalog.png)
+*Digital and Analog Sensors*
+
+---
+
+### Bits and Bytes 
+
+![]({{ site.baseurl }}/images/calculatingbits.png)
+*Calculting bits*
+
+*A bit can store 0 or 1 inside one memory box
+*8 bits form a byte
+* We can only store value up to the upper limit of that space
+*Need to research a bit on binary math ro understand it a bit better*
+* In order to calculate how many bits are needed, we multiply by 2
+
+---
+
+#### Arduino Programming
+
+* Arduino programming uses a mixture of c and c++
+* Arduino makers call it wiring 
+* Setup and Loop
+* Built in functions
+* what digitalWrite means is replace the built in function with a certain pin on the arduino board, n.13 for instance
+manipulating digital pins through inbuilt functions
+Low means 0 voltages which mean light off and high means 5 voltages which means ligh on
+*Variables, declared before setup
 
  
