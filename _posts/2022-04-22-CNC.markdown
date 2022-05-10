@@ -6,429 +6,720 @@ image:
 tags:   CNC Milling
 
 ---
+### CNC Milling
 
-1. Turn on computer, take out usb just in case 
-2. Make sure your spindle is not going to bump into a screw 
-3. Fire extinguisher is in the back 
-4. No framing, you have to know dimensions of milling in v carve pro 
-5. Example Square 10 * 10 set job size 
-6. Set dimensions roughly of design, then I know where I will place my screws 
-7. Separate drilling tool pit for bigger pieces 
-8. Measure thickness 
-9. Zero it at the bottom of the material, except for using wax or with the 3D mole making, put it near the top, waxed or foamed
-10. Sacrificial layer 
-11. Measuring our square 32.5 and 30.4 till 30.6 put it a bit smaller so 30 * 30 is okay!
-12. Y axis is the short direction and x axis is the long one 
-13. Zero point axis, bottom left corner (p.o.v) of machine which is my right 
-
-![]({{ site.baseurl }}/images/povcnc.jpg)
-*zero it to left side of the machine*
-
-15. Check the material, no screws or anything on it 
-16. How many screws you put in check the number 
-17. Modelling resolution is Fine, within the software, high 
-18. File, import, vectors 
-19. Job set in file operations and then press ok 
-
-* Tools to fix, vectors, you can draw something too
-
-20. Edit - select all duplicate vectors and delete them 
-21. Transform objects - move 
-22. Edit - join vectors option if vcarve says it’s not connected 
-23. Different types of join - Join with tolerance, join close vectors with lines, regular join options 
-24. Transform - align 
-
-![]({{ site.baseurl }}/images/Alignment_tools.jpg)
-
-25. Press fit test 
-26. 5 mm circles for the drilling tool path , the smaller the diameter the longer it takes so 5 is ok, how long your mm is going to be 
-
-![]({{ site.baseurl }}/images/Circle_thickness.jpg)
-
-
-![]({{ site.baseurl }}/images/5mm.jpg)
-*5 mm two flute end mill, it’s the little edges and because it’s flat it’s an end mill*
-
-![]({{ site.baseurl }}/images/6mm.jpg)
-*6 mm 2 flutes Bull nose means it’s rounded*
-
-![]({{ site.baseurl }}/images/pne_flute_one_edge.jpg)
-*One flute, one edge*
-
-Check the depth 
-
-27. ![]({{ site.baseurl }}/images/drilling_holes.jpg)
-*Drilling holes for the screws , 5 * 5*
-
-28. Toolpaths
-![]({{ site.baseurl }}/images/toolpaths.jpg)
-
-* Profile tool path 
-* Pocket tool path - Make a pocket out of the inner circle 
-* Inner cutting tool paths and outer cutting tool paths
-* Engraving will be a pocket so it won’t go all the way through 
-*You can generate these tools in whatever way you want but best to follow the order suggested*
+For this week, the challenge is to make an intern box using the CNC Machine!
 
 ----
 
-29. Drilling tool path, don’t cut all the way through 
-![]({{ site.baseurl }}/images/drilling_tool_path.jpg)
-*2/3 of the thickness, material might move too much, screw has to hold on to something*
 
-![]({{ site.baseurl }}/images/start_depth_drilling.jpg)
-*Start depth which is 0 (top of material)*
+![]({{ site.baseurl }}/images/explanation_xyz.jpg)
+*The shopBot Mill*
 
-*5 mm Deep except when you are drilling in a pocket then you start with 5 instead of zero*
+---
+### Safety Instructions
 
-----
+* There is an **emergency stop** button which is located at the front of the machine at the bottom(big red & yellow). Once pressed, then stop the vacuum by pressed the button at the upper corner.
 
-30. Select tool
+*This button is only to be used in cases of real emergency since once pressed, the machine will need to be rebooted.*
 
-![]({{ site.baseurl }}/images/5mm-drill.jpg)
+![]({{ site.baseurl }}/images/Emergency_stop.jpg)
+*The emergency stop (bottom-right) and vacuum on/off button (top-left)*
 
-* Fab academy 5 mm end mill
-* Spindle speed for wood 18000 and that’s the maximum
-* Name your file
-* Tool type end mill  
-* Drilling tool path end mil 
+* There is an **emergency exit door**
+* There is a fire extinguisher in the room
 
-*Geometry*
-* Diameter is 5 
-* Cutting parameter 
-* Pass depth : depth for every path for every vector 2.5 
-Half of the diameter(for 5 it’s 2.5) maximum depth of the material removed 
-* Stepover distance be, it takes more time
-*For instance 100 means no over lap*
-*3D models, roughing and finishing needs a larger step over*
-* We went with 30% which is not the best results yet not so bad
-
-![]({{ site.baseurl }}/images/30%.jpg)
-
-* Feedrate is the speed of the machine, going for 50-60 is a good start for wood with 2 flute end mill, when it comes to foam 100-120 mm per sec is a good speed
-
-* Plunge rate is the speed at which the router bit is driven down into the material when starting a cut and will vary depending on the bit used and the material being processed. 20 is good for our piece of wood
-
-* If you have a file with different milling bits, save them in different files
-
-* Dwell at the bottom - don't really use it 
-
-* Use vectors selection order and select the shapes in the order you wish for them to be cut
-
-![]({{ site.baseurl }}/images/shapes_vector.jpg)
 
 ---
 
-31. Press Calculate, this is a very important step then press close.
+### Personal Safety 
+
+* Make sure your hair is tied up. If your hair is long put in in bun.
+* Take off accessories
+* Be mindful not to wear loose clothing that could get hooked to the machine
+* Wear Safety Googles
+* Use ear protection
+* **Stay away from the machine while it's operating**
+
+---
+### Fire Safety
+
+* At the back of the room, there is a vacuum that sucks the chips that the mill creates.
+* Metal screws are used to fix the wood to the sacrificial layer. 
+* The biggest risk of creating a fire is when the milling bit comes into contact with metal. This creates sparks that are then sucked into the vacuum bag. 
+* To avoid such risks, add drilling holes to your design. The machine will mark the drilling holes on a first toolpath pass.
+* Incase of fire, turn off the electronics panel located at the back of the room
+---
+![]({{ site.baseurl }}/images/electronics-fire.jpeg)
+*Electronics panel*
 
 ---
 
-32. Preview toolpath 
+**If you hear or see that the bit is hitting the screw, do the following :**
+1. Stop the machine with the emergency stop button at the front of the machine.
+2. Stop the vacuum with the button at the front of the machine.
+3. Go to the room with the dust collector bag, loosen the round metal clip with which the plastic bag is attached to the machine.
+4. Inspect the bag.
 
-![]({{ site.baseurl }}/images/Preview Toolpaths.jpg)
+5. If a little smoke is coming out:
+* Close the bag to reduce the flow of oxygen.
+* Walk out of the building and inspect again.
 
-* Reset preview - Reset the preview before running.
-The toolpath boxes have to be checked to run with Preview Visible Tool Paths. The boxes uncheck when you preview. it will show the order of cutting as well as the depth, for instance to show that the mill will not go all the way through.
-
----
-
-33. Pocket toolpath
-
-*Pocket milling allows the machinist to use an end mill type cutting tool and machine away large amounts of material in a “Roughing” cycle prior to finishing the part. This saves time and efficiently maximizes the amount of material removal. There are different styles of pocket toolpath that include traditional lace or zig-zag (back and forth), concentric or offset In/Out and high speed cutting paths*
-
-There are three different types of pocket milling 
-
-* Traditional Pocket Toolpath
-* Pocket In/Out Toolpath
-* High speed pocket milling toolpath
-
-*The settings we used*
-1. Fab academy end mill 5 mm from tool list 
-2. Cut depth 6 mm start depth 0 
-3. Clear pocket 
-4. Offset in a spiral fashion concentric 
-5. Cut direction doesn’t matter leave on climb 
-6. Raster angle 90 degrees because it’s less harsher on the machine then press calculate 
-7. Profile pass : Used to clean up the inside edge after machining the pocket. This can be done either before the rastering (First) or after the rastering (Last). last is nicer than in the beginning
-8. Advanced settings
-* Vector Selection order gives you more control over what you do
-* Pocket Allowance : The Pocket Allowance allows you to quickly create a toolpath that will machine the pocket either smaller or larger than the defining closed vector. A Pocket Allowance of 0.0 (the default) will create a pocket the exact size of the defining vector.
-9. Close
-
-![]({{ site.baseurl }}/images/pocket_toolpath.jpg)
-
-![]({{ site.baseurl }}/images/pocket-allowance.jpg)
-
-----
-
-34. Profile toolpath 
-
-![]({{ site.baseurl }}/images/profile_tool_path.jpg)
-
-* Cute depth 12.4 
-* Outside/inside 
-* Direction climb 
-* Last pass - do separate last pass
-* Add tabs to tool path 
-* Add manually or automatically but not at corners, manually gives you more control to adjust
-
-![]({{ site.baseurl }}/images/not-at-corners.jpg)
-*Calculate and see what it’s doing*
-
-![]({{ site.baseurl }}/images/calculate_corner.jpg)
-
-* Then save
-*Rename toolpath list
-
-![]({{ site.baseurl }}/images/rename-list.jpg)
-*Be aware that one of the objects is not somewhere hiding, don’t copy paste little pieces somewhere hiding* 
-
-----
-
-34. Nails : use woodies because they don't break! Shot screws sometimes break...
-
-![]({{ site.baseurl }}/images/woodies.jpg)
+6. If a lot of smoke is coming out / a fire has started:
+* Close the bag to reduce the flow of oxygen and see if that stops it enough to then walk out of the building (possibly through the emergency exit at the back of the milling room).
+* If it’s really bad, throw it out of the window (do call down to warn people).
 
 ---
 
-35. Tool path summary to see how long it will take 
+### Other Safety
+
+* While shopBot is running, maximum number of people in the room should be 2 at a time.
+* Make sure the bed is clean, no clutter or other items are on it.
+* **Make sure that nothing is touching the machine from the sides** Clear the space, by organizing the wooden pieces away so there's spacing.
+
+![]({{ site.baseurl }}/images/clear_clutter.jpg)
+*Make sure there is no wooden pieces or other objects touching the machine from the sides*
+* Make sure the spindle is not going to bump into any screws.
+
+---
+### Preparing the file in **VCarve Pro**
+
+**VCarve** is one of the most impressive and efficient toolpath options. Depth is determined by the tool angle and width of vectors
+
+* Turn on computer, take out any attached USBs just in case.
+* You can edit your design on a software called **v carve pro**
+* Open VCarve Pro & Create a new file
+
+---
+**Setting up the material**
 
 
-![]({{ site.baseurl }}/images/toolpath-summary.jpg)
+![]({{ site.baseurl }}/images/jobsetup_vcarve.png)
 
-* Save toolpaths
-* Save screws on a seperate layer
+* Job size (X & Y) : Measure the height and width of your material and assign them to Width(x),Height(y), or use the measurements of your overall design as long as it fits on one board or break it down as you see is suitable. Knowing that the material you will be using either matches or exceeds the size of the finished product
 
-![]({{ site.baseurl }}/images/save-toolpath-file.jpg)
-*Make sure that you don’t select screw hole layer along with other layers*
+* Material (Z) : Set Zero at the bottom if you intend to cut the piece all the way throughthe material, otherwise you can adjust it according to what you intend to do.
+*Also note that if you are using wax, foam or for 3D mole making, put the Zero near the top!*
 
-* Keep hands on space bar, something goes wrong press it 
+* Measure the thickness of your material by using a caliper.
+
+* XY Datum position : Use the bottom left corner(See the picture below)
+
+![]({{ site.baseurl }}/images/Zero_point_axis.jpg)
+*Check that there are no screws or anything on your material*
+
+* Units: Use mm
+* Set modeling resolution to high & appearance to pine, just for the sake of visualisation within the software, yet not so important to do so!
+
+* Then import your file by going to File > Import > Vectors, choose your file and press ok
+
+---
+**File Operations**
+
+* First, make sure that there are no duplicated vectors. You can do that by going to edit > select all duplicate vectors > delete. This is important so that the software does not get confused about which area we are asking it to recarve. If you do have a design that requires overlapping, you can create a seperate vcarving toolpaths which will run in the order you require to achieve the effect you desire.
+
+![]({{ site.baseurl }}/images/selectallduplicatevectors.png)
 
 ---
 
-*Safety!*
+* Go to edit objects > Join open vectors (with tolerance)
 
-* Put hair up in a bun 
-* Safety Goggles
-* Hearing protection 
-* Whenever you are going to operate the machine, pieces of wood lying against the machine is not great 
-
-![]({{ site.baseurl }}/images/spacing-safety.jpg)
-*Some spacing*
+![]({{ site.baseurl }}/images/file_operationss.jpeg)
 
 ---
 
-*Operating the machine*
+* Use transform object to move or rotate object
 
-* Power button on 
-![]({{ site.baseurl }}/images/power-on.jpg)
+![]({{ site.baseurl }}/images/transform-align.png)
+*Align to selection and We aligned it to the center*
 
-* We want the machine to have a milling bit 
-* Key for spindle and tool for rotating the knot 
-![]({{ site.baseurl }}/images/key_spindel.jpg)
+
 
 ---
 
-*Shopbpt*
+### Changing Milling Bits
 
-![]({{ site.baseurl }}/images/x-no-need.jpg)
-*Press x, we don't need this window*
+**Types of milling bit**
+There are a few things to consider when changing the milling bit. Types of milling bit differ in diameter and type. For instance, there are end mills as well as flat heads & ball heads. 
 
-![]({{ site.baseurl }}/images/locate-keypad.jpg)
+* Diameter : Thickness of the mill. The thicker the mill, the faster and less precise it is. The thinner, the slower but more precise. The standard diameter is 5mm.
 
-*Locate keypad, press K on keyboard*
+* Flutes : The number of threads of the mill. The more flutes, the more precise the milling, yet the slower it is.
 
-* Click with arrows, it’s moving 
+* One flute: For rough/prototype work, Fast, but not very neat.
+* Two flutes : Standard, more precise.
 
-![]({{ site.baseurl }}/images/arrows.jpg)
-*Keep in mind y and x axis (up and down y) (left and right x) Z axis page up and page down*
+The flutes are important for the speed of the machine, because the mill needs to drain the material. The more flutes, the more difficult to drain the material.
 
-* The skirt
+<p float="left">
+<div class="img-with-text">
+  <img src="/images/5mm.jpg" width="200" alt="sometext" /> 
+  <p>5 mm two flutes, end mill</p>
 
-![]({{ site.baseurl }}/images/butterfly-screw.jpg)
-*loosen up the butterfly screw*
-
-![]({{ site.baseurl }}/images/direction_of_the_screw.jpg)
-*Direction of the screw, sometimes you need two to apply more force*
-
-![]({{ site.baseurl }}/images/two_Screws.jpg)
+  <img src="/images/6mm.jpg" width="200" alt="sometext" /> 
+    <p>6 mm two flutes, bull nose which means it’s rounded</p>
+  <img src="/images/pne_flute_one_edge.jpg" width="200" alt="sometext" />
+    <p>One flute, one edge</p>
+  </div>
+</p>
 
 ---
 
-* The knot, the collet and  milling bit 
+### The nut, the collet and the millig bit
+
+* First, push the milling bit out of the collet
 
 ![]({{ site.baseurl }}/images/the knot.jpg)
 *We have to push it out*
 
-![]({{ site.baseurl }}/images/push-out.jpg)
+* Then clean it up, make sure there's no dust
+
+* ![]({{ site.baseurl }}/images/push-out.jpg)
 *Remove dust*
 
-![]({{ site.baseurl }}/images/collets.jpg)
-*Box with all collets*
+---
 
-*Er 25 diameter* 
+**Collet**
 
-* Put collet into nut and it has to give a satisfying click, not to have it loose 
+Depending on the diameter of the milling bit you're using, you need a different *collect*, which holds the milling bit inside the nut of the milling head.
 
-* Milling bit into collet 
+![]({{ site.baseurl }}/images/colletsbox.jpg)
+*A case with different diameter collets*
 
-![]({{ site.baseurl }}/images/click.jpg)
-*Make sure it goes in but not too deep, wraps it up entirely*
+* Put the milling bit inside the collet and collet inside the nut of the milling head. The collet should *click* once its inside the nut. The milling bit should be pushed into the collet for about 2 cm.
 
-* Measure how much it’s coming out 
+* **Make sure to measure how far the milling bit sticks out of the nut+collet.** It needs to stick out at least as far as the deepest point that you want to mill, and preferably 2-3 mm more.
+
+* Make sure that bit's top is coincident with the inner part of the nut
 
 ![]({{ site.baseurl }}/images/measure-click.jpg)
 *Don’t try to push the boundaries* 
-*If you’re milling into 2D it’s not important* 
-*If you’re milling into 3D it is important to keep in mind* 
 
-* Put milling bit into machine 
+To attach the nut back in, screw it so its tight, then loosen the wing nut on the dust skirt then push the skirt down.
 
-![]({{ site.baseurl }}/images/milling-bit-machine.jpg)
+---
+#### The skirt
 
-* Tighten it as tight as you can but not too tight that you can’t take it off again 
+* Unscrew the dust skirt using the butterfly key located at the back of the Z-axis bridge. In this way, the Spindle will be accessible to attach the previously assembled components.
 
-![]({{ site.baseurl }}/images/tighten-it-up.jpg)
+![]({{ site.baseurl }}/images/skirt.jpeg)
+*Dust Skirt*
 
-* Put the skirt back on 
+![]({{ site.baseurl }}/images/butterfly key.jpg)
+*Butterfly Key*
 
-![]({{ site.baseurl }}/images/skirt-back-on.jpg)
+**Tip : You can use both screws to add more weight in case it's too tightened (while removing)
 
-* Milling bit in the screw driver 
+![]({{ site.baseurl }}/images/bothscrews.jpg)
+*Loosning skirt*
 
-![]({{ site.baseurl }}/images/milling-screw.jpg)
-*Where am I going to place it and is it flat?* 
+* Tighten the three components (collet,nut & milling bit) to the Spindle by use the key attached to the chord. Don't over do it though, as then it would be hard to remove it later.
 
-![]({{ site.baseurl }}/images/flat_screw.jpg)
-*Clearance above material is 6 mm*
+![]({{ site.baseurl }}/images/key_spindle.jpeg)
+*Key and Spindel*
 
+![]({{ site.baseurl }}/images/putting backcolletnut.jpg)
+*Putting back the three components*
 
-* It should be sanded after every job - sacrificial layer 
+* Put the skirt back on - al the way
 
-* Pick the Shortest woodies 
+![]({{ site.baseurl }}/images/put-skirt_back.jpg)
 
-* To secure the piece add some screws, the material sometimes automatically lifts 
+* Place material on the machine. Make sure surface underneath is flat.
 
-![]({{ site.baseurl }}/images/secure-piece.jpg)
+* When using small pieces of wood : use drill to secure a screw so the piece doesn't move when milling the drilling toolpath. Keep in mind, not to do it on a place where the milling bit is going! Make sure material doesn't lift. keep number of screws used in mind.
 
-![]({{ site.baseurl }}/images/2-screws-piece.jpg)
-*2 screws were enough to stabilise it* 
+---
+Back to **VCarve Pro**
+
+### Toolpath menu
+
+The ultimate purpose (in almost all applications) of VCarve Pro is to allow you to generate toolpaths which can be run on a CNC machine to machine the finished part of the material of choice. This requires, at a minimum, some vectors to describe the area to which a toolpath will be limited to or perhaps a combination of both vectors and 3D Model
 
 ---
 
-* Tell the machine where she is - Let the machine find it’s absolute zero
+**Create the toolpaths**
+
+* Open the toolpath menu
+
+![]({{ site.baseurl }}/images/Toolpaths View Gadgets Help.jpg)
+
+---
+
+![]({{ site.baseurl }}/images/toolpath_open.png)
+
+* We created different toolpaths for the milling.
+
+The order of the toolpaths should be as follow :
+
+1. Drilling toolpath
+2. Pocket toolpath
+3. Profile toolpath : Inner & Outer cutting toolpath
+
+
+---
+
+#### Drilling toolpath
+
+![]({{ site.baseurl }}/images/drilling_toolpath.png)
+
+Use this toolpath to make holes for your screws to hold down the  material when milling. Use the same size for the holes as for the mill. For instance if mill size is 5 mm then drilling hole size should also be 5 mm.
+
+* Select the drilling holes. (When using the vector selection order the machine will mill the holes in the order of selecting)
+
+**Set start depth and cut depth**
+
+Start depth - This specifies the depth at which the toolpath is calculated from.
+If starting on the top of the material which is in most cases, then the start depth is 0. Only when drilling in a pocket, with our example we started with 5 mm instead of 0. A pocket is a way to make an engraving.
+
+**Note** : If machining into the bottom of an existing pocket or 3D region, the depth needs be entered.
+
+* Cut depth - The depth of the toolpath relative to the Start Depth.
+You don't want to cut all the way through because you want the screw to hold onto something. (2/3 of the material thickness is sufficent, otherwise the material might move alot)
+
+**Select** the tool (mill) - Clicking the Select button opens the Tool Database from which the required tool can be selected.
+
+
+![]({{ site.baseurl }}/images/toolbase.jpeg)
+
+The settings we chose :
+
+**Tool info**
+
+* The name of the tool, we chose Fab Academy End Mill(5 mm) for our purpose
+* Tool type -  end mill  
+* Drilling tool path - end mil
+
+**Geomtry**
+
+Diameter - Diameter of the mill using.
+
+**Cutting Parameters**
+
+Pass Depth - Depth for every vector per pass (you always use multiple passes). To measure the pass depth, the rule of thumb is to use half of the diameter of the mill, for instance, if using a 5mm mill pass depth is 2.5
+
+Step Over - Distance between each pass of the machine tool head. The larger the step over, the faster the job but the less precise it is. 100% step over means no overlap. 50% is half overlap. The lower the step over, the smoother the surface.
+
+Larger stepover : rough milling which is used for fast prototypes. 
+
+Small stepover : nicer material & finish, will have precise results.
+
+30% is roughlt in the middle - Good Startpoint
+
+
+**Feeds and Speeds**
+
+Spindle Speed - 1800 for wood (maximum speed).
+
+Feed Rate - is the speed of the machine, 50 - 60 mm for wood with 2 flutes end mill. Smaller diameter runs slower. IF using foam 100-120 mm per second is fine. **A bit of trial and error to get better results**
+
+Plunge Rate - Plunge rate is the speed at which the router bit is driven down into the material when starting a cut and will vary depending on the bit used and the material being processed. Always keep it on 20.
+
+* Peck drilling - 
+
+* Dwell at the bottom of each drill pass - the Dwell Time value is used pause the drill at the bottom of each peck drill pass before retracting. The dwell time value is measured in seconds.
+
+* Use vectors selection order and select the shapes in the order you wish for them to be cut
+
+![]({{ site.baseurl }}/images/order_vector.jpg)
+
+
+* Press **Calculate** and close.
+
+----
+
+**Preview Toolpath**
+
+![]({{ site.baseurl }}/images/previewtoolpath.png)
+
+Reset preview - Reset the preview before running.
+The toolpath boxes have to be checked to run with Preview Visible Tool Paths. This will demonstrate the order of cutting as well as the depth, for instance to show that the mill will not go all the way through.
+
+---
+
+#### Pocket toolpath
+
+Pocket milling allows the machinist to use an end mill type cutting tool and machine away large amounts of material in a “Roughing” cycle prior to finishing the part. This saves time and efficiently maximizes the amount of material removal. There are different styles of pocket toolpath that include traditional lace or zig-zag (back and forth), concentric or offset In/Out and high speed cutting paths
+
+---
+
+
+![]({{ site.baseurl }}/images/pocket-toolpath.jpeg)
+
+* Set **Start depth** (We went for 0) and **Cutting depth** (We went for 6). 
+
+* **Select** tool (We chose Fab academy end mill 5 mm from tool list)
+
+* **Clear pocket** 
+
+There are **two choices** of the type of fill pattern that will be used to clear away the area to be machined with the Pocket Toolpath
+
+ **Offset** : Calculates an offset area clearance fill pattern to machine inside the selected vector(s). It works well with vectors, yet not with 3D shapes.
+
+ **Raster** : Calculates a Raster based area clearance fill pattern to machine inside the selected vector(s).
+
+ Cut direction : Climb or Conventional, choose either one, won't affect the final result.
+
+* **Raster Angle** - Between 0 and 90°, where 0° is parallel to the X axis and 90° parallel to the Y axis.(We chose 90 because it is less harsher on the machine)
+
+* **Profile Pass** - Used to clean up the inside edge after machining the pocket. This can be done either before the rastering (First) or after the rastering (Last). (We used Last because it gives a cleaner edge).
+
+---
+
+* **Advanced Settings**
+
+Vector selection order gives you more control of what you are doing.
+
+---
+
+* **Pocket Allowance** - The Pocket Allowance allows you to quickly create a toolpath that will machine the pocket either smaller or larger than the defining closed vector. A Pocket Allowance of 0.0 (the default) will create a pocket the exact size of the defining vector.
+
+ This helps in making the design press fit and is similiar to the offset command as in milling the pcoket either smaller or bigger than the vecor, to make things fit either tightly or loosely.
+
+ * Close
+
+ ---
+
+#### Profile toolpath
+
+Profile Machining is used to cut around or along a vector.
+
+Profile toolpaths can be **outside**, **inside** or on the **selected vectors**, automatically compensating for the tool diameter and angle for the chosen cut depth.
+
+* Note : the program will always cut the inner vectors before the outer vectors to ensure the part remains attached to the original material as long as possible.
+
+![]({{ site.baseurl }}/images/vcarve_profile_toolpath_options.png)
+
+**Cutting Depths**
+
+* Start depth : Specifies the depth at which the Profile toolpath is calculated. When cutting directly into the surface of a job the Start Depth will usually be 0. If machining into the bottom of an existing pocket or stepped region, the depth of the pocket / step must be entered. (We went for 0)
+
+* Cut depth : The depth of the profile toolpath relative to the Start Depth. (We went for 12.4)
+
+
+* Tool - click on **select** to open up the tool database, which includes some advanced toolpath options
+
+---
+
+* The Tool Database
+
+![]({{ site.baseurl }}/images/tooldatabase.png)
+
+**Tool info**
+
+* Name - choose a name for your tool
+
+* Tool type - as explained earlier there are various cutters that can be specified in the database, choose the one you intend to use.
+
+Some examples :
+
+![]({{ site.baseurl }}/images/ToolDatabase0.png)
+*V-Bit*
+
+![]({{ site.baseurl }}/images/engraving.png)
+*Engraving*
+
+![]({{ site.baseurl }}/images/taperedbullnose.png)
+*Engraving*
+
+![]({{ site.baseurl }}images/Screenshot 2022-05-10 at 10.02.10.png)
+*Engraving*
+
+**Geometry**
+
+* Diameter - the diameter of the tool. The tool image will indicate where this dimension is taken from.
+
+*Cutting Parameters* : The maximum depth of cut the tool can cut. The *Pass Depth* controls the number of z level passes that are calculated for a toolpath.
+
+---
+
+* **Machine vectors** - basically where to place the mill
+
+There are 3 options to choose from to determine how the tool is positioned relative to selected vectors :
+
+* **Outside** - calculates a profile toolpath around the outside of the selected vectors, cutting direction either climb or conventional.
+
+* **Inside** - calculates a profile toolpath around the inside of the selected vectors, with the options for the cut direction to be either climb or conventional.
+
+* **On** - Calculates a profile toolpath around the On selected vectors.
+
+**Direction** - can be set to either conventional or climb, doesn't make much of a difference.
+
+**Allowance offset** Either **Overcut** (negative numbers will cut smaller) or **Undercut** (positive numbers will cut larger) If the allowance is set to zero then the toolpaths will machine to the exact size.
+
+* Sperate last pass - A seperate allowance can be specified for the last pass. If this allowance is given all but the last pass will be undercut by the specified allowance with the final pass being the only pass which cuts to size.
+
+**Note** : If the Reverse direction button is checked, then the cutting direction of the last pass is reversed.
+
+* **Tabs** !!important!! (bridges) are added to hold parts in place when cutting them out of a material. You can edit the tabs to locate them in a centered position in each side of your design. Use as much as you need depending on the size of your design. Yet avoid placing tabs on **corners**, you can add tabs automatically or manually.
+
+* Press **calculate** 
+* Save
+
+---
+
+**After creating toolpaths**
+
+* Rename ToolPath list, make sure that each path is seperate from the others especially the drilling toolpath and saved on its own layer. Not to have accidentelly selected a screw hole in another layer.
+
+* Tip : When saving files, order them in this order : Drilling toolpath > Pocket Toolpath > Profile toolpath. The machine will follow the order given and this way you avoid making mistakes.
+
+* Note : Double check that there are no objects hiding, avoid copy pasting little pieces 
+
+* Clock icon - (Tool path summary) will indicate how long the milling is going to take
+
+* Floppy icon - Save toolpaths Save files separately. Set metric system. Save file in map.
+
+* Make sure not to change anything after calculating, always re-calculate to be on the safe side. Also watch the 3D view to make sure everything is fine.
+
+---
+
+* Note : When using nails, woodies are better because they don't break! 
+
+---
+
+#### Operating the machine
+
+* Turn on the red button on the side of the machine.
+
+![]({{ site.baseurl }}/images/INTERLOCK.jpg)
+
+* The software linked to the machine is called **shopBot V3**, it will open automatically once the machine is turned on.
+
+* Close the little window the pops up, not needed.
+
+* Locate keypad, press K on keyboard
+
+* The arrows on keypad or the arrows on keyboard (down arrow is X and up arrow is Y) are a way to move milling head, keep X and Y axis in mind when moving. You can move the Z axis with page up & down on keyboard.
+
+![]({{ site.baseurl }}/images/keypad.jpeg)
+
+* Caliberate the machine, find absolute zero (press zero X/Y button) then press ok.
 
 ![]({{ site.baseurl }}/images/zeroxy.jpg)
-*Absolute zero of the machine versus the zero we are going to set*
 
+* Press K on keyboard and move mill head to the material origin (bottom left - check file)
 
-![]({{ site.baseurl }}/images/zerook.jpg)
-*Press ok*
+* Take a picture of the coordinates - in event o a power shortage/emergency button press etc; you will need to re-enter the origin
 
-* Open up keypad by pressing k on keyboard
+* Open tab Zero > click zero [2] axis (X & Y), this is now our new home
 
-![]({{ site.baseurl }}/images/newhome.jpg)
-*Move to the place where I want it to become my new home* 
+![]({{ site.baseurl }}/images/zeroxy.jpeg)
 
-![]({{ site.baseurl }}/images/xxpoint.jpg)
-*X and y position very important, zero to this point* 
-
-![]({{ site.baseurl }}/images/fill-in-coordinates.jpg)
-*Fill in coordinates*
-
-![]({{ site.baseurl }}/images/newhome.jpg)
-*Click zero axis(x,y) and now it's our new home*
-
-*Move Keypad to sacrificial layer*
-*Zero it on there because it’s set to bottom of material*
+* Zero the z-axis. Zero on table surface using the keypad since we put the zero in the file on the bottom. Choose a nice flat place. *In short, to the bottom of the material*
 
 ![]({{ site.baseurl }}/images/zleveling.jpg)
-*Z levelling : Zero z button for it*
 
-![]({{ site.baseurl }}/images/connection.jpg)
-*Check the connection*
+* Use the metal plate to check connection with milling bit. Check if inp 1 lights up.
+*If Input one lights up, then there is a connection. This will help to spicify the depth*
 
+![]({{ site.baseurl }}/images/materialcal.jpeg)
 
-![]({{ site.baseurl }}/images/input_one_no_connection.jpg)
-*Input one is lighting up, means there is a connection, this will help to spicify the thickness*
-*Under this material, alligator kit or milling bit has residue so it doesn’t sense a connection*
+![]({{ site.baseurl }}/images/shopbotcal.jpeg)
 
+* Put metal plate directly under milling bit.
 
+* Press ok, don't remove the aligator clip. Ready to zero
 
 ![]({{ site.baseurl }}/images/zeroz.jpg)
-*Press zero z, ready to zero!*
 
-![]({{ site.baseurl }}/images/pageup.jpg)
-*Press Keypad page up (very important)*
+* Open keypad with K. Press page up ! No other button ! To move the milling head up.
 
-*Recap Level z axis  and Zeroing x and y*
+![]({{ site.baseurl }}/images/pageup.jpgg)
 
-*Now load file and turn on machine*
+* Put away metal plate.
 
-![]({{ site.baseurl }}/images/pageup.jpg)
-*Load file - Screws*
+* Check file one more time.
 
-![]({{ site.baseurl }}/images/load-screws-layer.jpg)
-*Load screws file, file loaded*
+* Load file - open the screw toolpath file.
+
+* Use key to turn on spindle 
 
 ![]({{ site.baseurl }}/images/spindal.jpg)
-*Turn Spindel on*
 
-![]({{ site.baseurl }}/images/allgood.jpg)
-*Take a look, it’s not dancing around so all good*
+* Take a look, make sure it is not dancing around and that everything is ok.
 
-
-![]({{ site.baseurl }}/images/speed-spindal.jpg)
-*Speed of Spindel press these buttons to change 18.0 
-(Only to show, no need to do anything only if someone changed the settings)*
-
----
-
-* Back of the room
+* Turn on ventilation (back of the room)
 
 ![]({{ site.baseurl }}/images/vanti.jpg)
-*Turn on ventilation*
+
+* Put on googles
+
+* And when completely ready press **Start**
+
+![]({{ site.baseurl }}/images/start.jpeg)
+
+* Holes will be drilled
+
+**Stay close to space bar** incase anything goes wrong, once pressed the  mill will stop moving yet not spinning
+
+* Turn off spindle and ventilation.
+
+* Press K to open up keypad and move milling head to make space to put in screws.
+
+* Secure screws.
+
+* Recap from earlier... **Woodies** are better since they don't break!
+
+![]({{ site.baseurl }}/images/woodies.jpeg)
 
 ---
 
-![]({{ site.baseurl }}/images/hold and press.jpg)
-*Hold and press*
+* Load second file.
 
+* Turn on spindle (keep space in touch)
 
-![]({{ site.baseurl }}/images/press-start.jpg)
-*Then press start*
+The remaining toolpaths will be milled.
 
-* Hold hand on space bar 
+---
 
-* After it’s done turn off Spindel and ventilation and then add screws 
+#### After using the CNC milling machine
 
-* Adjust it so it’s less shaky 
+* Turn off ventilation and spindle.
+* Move milling head.
+* Take out screws and count how many you took out.
+* Close the Shopbot software
+* Switch the machine off
+* Vacuum the table.
 
-* Load other file in 
-
-![]({{ site.baseurl }}/images/notoptimal.jpg)
-*Not optimal results, try tweaking with settings*
-
-![]({{ site.baseurl }}/images/moveheadaway.jpg)
-*Move head away*
-
-![]({{ site.baseurl }}/images/movesee.jpg)
-*Take out screws and see what we have made*
-
-* Turn off machine 
-
-* Turn off Vaccum in the back
-
-* Then a bit of vacuuming is good afterwards 
 
 ![]({{ site.baseurl }}/images/final-results.jpg)
-* Final results after sanding
+*Final results after sanding*
 
----
 
-*Need to look into tweeking with setting to get better result*
 
-* Feed rate lower to 40 
-* Play with offset 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
