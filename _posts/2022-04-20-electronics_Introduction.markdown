@@ -148,7 +148,7 @@ The difference is either use the increment then declare it or the opposite of de
  * Scope
  * Two types of variables : Global and local, already familiar with this, just note that if you declare a local varibale in void setup() you can also declae it again in void loop() with a different value
 
- * Qualifiers define additional behavior to our variables, constant and static types... const keyword means its ready only, can be used as any other variable of its type but its value cannot be changed
+ * Qualifiers define additional behavior to our variables, constant and static types... const keyword means its read only, can be used as any other variable of its type but its value cannot be changed
  * you can use hash define instead of const, it doesn't use any memory in arduino  yet it has some downsides as the compiler will replace all the references to pi in the code and you will start facing problems
  *Static Qualifier will initialize a value locally only one time, for instance if declared inside void loop then it will only read it once static int fish = 0;
 
@@ -156,8 +156,13 @@ The difference is either use the increment then declare it or the opposite of de
 
  ### Logical Operators 
 
- * Also familair with these ones, && || !
+ * Also familiar with these ones, && || !
 
  ---
 
- Control Structues 
+ *Control Structues, same logic of if else statements*
+ while, do while...etc..
+the **break** condition helps to break out of an endless loop
+the **continue**
+
+  

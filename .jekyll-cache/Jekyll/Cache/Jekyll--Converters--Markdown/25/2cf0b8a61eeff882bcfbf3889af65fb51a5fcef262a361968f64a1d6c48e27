@@ -1,0 +1,310 @@
+I"5&<h3 id="pcb-copper-plates-types">PCB Copper Plates Types</h3>
+
+<ul>
+  <li>When it comes to PCBs, the copper plates can be either one sided or double sided or even multilayered. <em>Singel Sided</em> has only one layer of conducting material on one side of the board. The single sided are one of the most commonly fabricated boards as they are very simple and basic to make.</li>
+</ul>
+
+<hr />
+
+<p><em>There are four different layers</em> :</p>
+
+<p><img src="/images/pcblayers.jpg" alt="" /></p>
+
+<ol>
+  <li>Base layer that is screwed into the machine</li>
+  <li>Acrylic white sheet on top of it</li>
+  <li>Sacrifical layer on top of the acrylic one</li>
+  <li>The copper plate is the last layer that will go on top of everything</li>
+</ol>
+
+<hr />
+
+<p><strong>Tip</strong> : There is a light switch on the right side of the machine</p>
+
+<hr />
+<h3 id="steps">Steps</h3>
+
+<ul>
+  <li>Make sure your file is exported as a <em>png</em> or <em>svg</em>. Using kicad you can export as an <em>svg</em></li>
+  <li>If there is an older board attached, remove it and clean the area with a sticker remover.</li>
+</ul>
+
+<p>Note : When you setup the sacrifical layer, clean the area afterwards as well.</p>
+
+<ul>
+  <li>Measure your copper plate</li>
+</ul>
+
+<p><img src="/images/copperplate.jpg" alt="" /></p>
+
+<ul>
+  <li>
+    <p>Remove bed from machine</p>
+  </li>
+  <li>
+    <p>Attach the copper plate with a tape and spread it on the surface everywhere, place the cooper plate on the sacrificial layer. Use a piece of fabric to press the plate.</p>
+  </li>
+</ul>
+
+<p><img src="/images/tape.jpg" alt="" /></p>
+
+<p><em>Make sure it doesn’t overlap though</em></p>
+
+<ul>
+  <li>Insert bed into machine &amp; tighten by fixing screws</li>
+</ul>
+
+<hr />
+
+<h3 id="types-of-pcbs-">Types of PCBs :</h3>
+
+<p>The general umbrella</p>
+
+<ul>
+  <li>
+    <p>ISP which is <strong>In System Programming</strong> which is also called <strong>In Circuit Programming</strong>
+Is the ability of some programable logic devices, microcontrollers, and other embedded devices to be programmed while installed in a complete system. So, intead of needing the chip to be programmed before hand.</p>
+  </li>
+  <li>
+    <p>Types :</p>
+  </li>
+</ul>
+
+<p>JTag stands for <strong>Joint Test Action Group</strong>
+ SWD for programming chips called SAMD</p>
+
+<hr />
+
+<h4 id="insert-milling-bit-">Insert Milling bit :</h4>
+
+<p>We used 0.8  mm milling bits for outlining &amp; 0.4  mm milling bits for tracing
+<img src="/images/millingbits0.4-0.8.jpg" alt="" /></p>
+
+<p>You can use either one or two flutes, yet two flutes are more precise.</p>
+
+<p><img src="/images/Hiddenstach.jpg" alt="" />
+<em>You can find milling bits over here, ask Hank or Michelle before using</em></p>
+
+<hr />
+
+<h3 id="operating-software-steps-">Operating Software Steps :</h3>
+
+<ul>
+  <li>Turn on machine : Press power button in front of machine.</li>
+  <li>Opening terminal (shortcut : ctrl+Alt+t)</li>
+  <li>Start mods by typing :
+ <strong>cd Mods</strong>
+ <strong>bash Mods</strong></li>
+  <li>Click cancel &amp; cancel again. This will automatically open the browser.</li>
+  <li>Right click on the little square on the top and open program then press on PCB under <strong>MDX mill</strong></li>
+</ul>
+
+<p><img src="/images/mods CE.jpg" alt="" /></p>
+
+<ul>
+  <li>Open <strong>png</strong> or <strong>svg</strong> file, always start with traces</li>
+</ul>
+
+<p><img src="/images/dpi.jpg" alt="" />
+<em>DPI is dot per inch</em></p>
+
+<ul>
+  <li>Close all sockets and boards</li>
+  <li>Open web socket serial</li>
+  <li>Open socket open port</li>
+  <li>Press view (on machine)</li>
+  <li>Set origin by clicking on the up and down arrows branched from tool (on machine)</li>
+</ul>
+
+<p><img src="/images/updown.jpg" alt="" />
+<em>Power on, view &amp; setting origing with the up and down clicks</em></p>
+
+<hr />
+
+<h3 id="replacing-milling-bits-">Replacing Milling bits :</h3>
+
+<p><img src="/images/replacingmillingbits.jpg" alt="" />
+<em>Tip : Put your finger behind it while removing it so it doesn’t fall</em></p>
+
+<p><img src="/images/loosen.jpg" alt="" />
+<em>Tip : On the right of the red sticker, you can find the little hole to loosen it up</em></p>
+
+<p><strong>Tip</strong> Be careful not to take out the little circle attached to it.</p>
+
+<p><img src="/images/bottom.jpg" alt="" />
+<em>Tip : You can find the pieces used for loosing on the little magnet on the bottom right</em></p>
+
+<ul>
+  <li>push the milling bit all the way up</li>
+</ul>
+
+<p><img src="/images/millingbitpush.jpg" alt="" />
+<em>Tip : Tighten it but don’t over do it!</em></p>
+
+<ul>
+  <li>
+    <p>Click on the down button all the way until the tip touches the board then go slightly up</p>
+  </li>
+  <li>
+    <p>Level it on this surface and move it around slightly, make sure it’s not all the way up anymore, bring it down so its touching the surface exactly</p>
+  </li>
+  <li>
+    <p>Wiggle it out a bit then tighten it again</p>
+  </li>
+  <li>
+    <p>Then mechanically set level Z</p>
+  </li>
+  <li>
+    <p>Don’t manually move to set an origin because if your origin is set differently on the software, it will go to the manual one instead.</p>
+  </li>
+</ul>
+
+<p><img src="/images/movetoorigin.jpeg" alt="" /></p>
+
+<ul>
+  <li>
+    <p>If your board is previously used with some empty space on it, measure the empty space to make sure it fits.</p>
+  </li>
+  <li>
+    <p>Take a picture of your origin parameters incase the program crashes.</p>
+  </li>
+</ul>
+
+<hr />
+
+<h3 id="setting-parameters-in-mods-">Setting Parameters in mods :</h3>
+
+<ul>
+  <li>
+    <p>Invert selection and see if you need to add an extra 0, sometimes if the file is imported not to scale, then it could be too small, for example assuming that a line is 4 mm instead of 40 mm.</p>
+  </li>
+  <li>
+    <p>In the <strong>set PCB default</strong> section, press cut depth &amp; max depth to 0.05</p>
+  </li>
+  <li>
+    <p>Press Mill traces button first then Mill raster 2D tool diameter</p>
+  </li>
+</ul>
+
+<p><img src="/images/milltraces.jpg" alt="" /></p>
+
+<p><img src="/images/millraster.jpg" alt="" /></p>
+
+<ul>
+  <li>
+    <p>Offset number is the amount of lines you are going to mill from the traces, 4 is a nice number for soldering</p>
+  </li>
+  <li>
+    <p>Step over is the same as with the CNC 0.5 for 0.4 not for 0.8</p>
+  </li>
+  <li>
+    <p>For the direction, does not matter which one you choose.</p>
+  </li>
+  <li>
+    <p>Path merge 1</p>
+  </li>
+  <li>
+    <p>Path order, click forward</p>
+  </li>
+  <li>
+    <p>Press calculate</p>
+  </li>
+  <li>
+    <p>Review your file and check, if the preview looks weird then something is wrong 
+Black area is important. Play with threshold to fix it.</p>
+  </li>
+</ul>
+
+<p>*Tip : The black area is the are that will get cut away and the white one is what remains.</p>
+
+<ul>
+  <li>
+    <p>Press calculate again</p>
+  </li>
+  <li>
+    <p>Send file</p>
+  </li>
+</ul>
+
+<p><img src="/images/websock.jpg" alt="" /></p>
+
+<ul>
+  <li>It will start milling away!</li>
+</ul>
+
+<hr />
+<p>We noticed that the depth was not enough so we wanted to change it, we had to pause and reset it.</p>
+
+<ul>
+  <li>Tip : if you press view while it is milling then it will pause.</li>
+  <li>Reset it to empty the memory by holding the up and down buttons simultaniously for a while.</li>
+  <li>Press view to go to its origin</li>
+  <li>Press move to origin</li>
+  <li>Play with the cut &amp; max depth of the mill raster</li>
+  <li>Send file again, pay close attention to how it is cutting, if the path looks dark then it is going through and it is all good!</li>
+  <li>Close it, the light will switch off indicating that it is closed properly and wait for it to be done.</li>
+</ul>
+
+<p><img src="/images/closed.jpg" alt="" /></p>
+
+<hr />
+
+<p><img src="/images/resultstracing.jpg" alt="" /></p>
+
+<hr />
+
+<p>Repeat steps to prepare for outline file</p>
+
+<hr />
+
+<h3 id="parameters-for-outline">Parameters for Outline</h3>
+
+<p><img src="/images/millrasteroutline.jpg" alt="" /></p>
+
+<p>Load the outline file
+Set the cut speed to 4 mm/s
+Tinker the setting of the mill outline on the right side because it is metric</p>
+
+<ul>
+  <li>Set Tool diameter to 0.8 (when we tried it, the path did not work so we went for 0.08, again could be a problem with scaling)</li>
+  <li>Set Cut depth to 0.6</li>
+  <li>Set Max depth to 1.6</li>
+  <li>Set offset number to 1 (it’s only going to be one cut out)</li>
+  <li>Don’t change anyhing with the offset step over</li>
+  <li>
+    <p>Press Calculate</p>
+  </li>
+  <li>
+    <p>If something doesn’t look right in the preview, play with threashhold and calculate again, we settled on 0.95 and it fixed our problem</p>
+  </li>
+  <li>Note: Red lines are travel moves, it should all be black</li>
+</ul>
+
+<p><strong>Repeat steps</strong></p>
+
+<ul>
+  <li>Move it to origin</li>
+  <li>Change milling bit</li>
+  <li>Press up (Up all the way)</li>
+  <li>Put in the 0.8 milling bit &amp; screw it back</li>
+  <li>Move it all the way back then a little bit up</li>
+  <li>Then tighten it a bit more and while with your finger to make sure that there is no dust under it</li>
+  <li>Calculate</li>
+  <li>Then press start (load file)</li>
+</ul>
+
+<hr />
+
+<p><strong>Problems I ran into and how I fixed them</strong> :</p>
+
+<ul>
+  <li>Forgot to bring the milling bit down after moving it slightly up, so it wasn’t touching the surface.
+*The program crashed at some point, putting the origin paramters in somehow did not move to the same spot.</li>
+  <li>The scaling problem when it came to the outline, 0.8 did not work but 0.08 worked fine</li>
+  <li>Forgot to invert selection</li>
+  <li>Sometimes when I tried opening and closing ports and sockets, it still didn’t work so had to close everything and run again through terminal.</li>
+</ul>
+
+<hr />
+
+:ET

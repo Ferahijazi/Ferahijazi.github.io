@@ -167,7 +167,7 @@ The flutes are important for the speed of the machine, because the mill needs to
 
 ### The nut, the collet and the millig bit
 
-* First, push the milling bit out of the collet
+* First, push the nut out of the collet
 
 ![]({{ site.baseurl }}/images/the knot.jpg)
 *We have to push it out*
@@ -186,7 +186,7 @@ Depending on the diameter of the milling bit you're using, you need a different 
 ![]({{ site.baseurl }}/images/colletsbox.jpg)
 *A case with different diameter collets*
 
-* Put the milling bit inside the collet and collet inside the nut of the milling head. The collet should *click* once its inside the nut. The milling bit should be pushed into the collet for about 2 cm.
+* Put the nut inside the collet and millig bit inside the nut. The collet should *click* once its inside the nut. The milling bit should be pushed into the collet for about 2 cm.
 
 * **Make sure to measure how far the milling bit sticks out of the nut+collet.** It needs to stick out at least as far as the deepest point that you want to mill, and preferably 2-3 mm more.
 
@@ -484,7 +484,7 @@ There are 3 options to choose from to determine how the tool is positioned relat
 
 ![]({{ site.baseurl }}/images/INTERLOCK.jpg)
 
-* The software linked to the machine is called **shopBot V3**, it will open automatically once the machine is turned on.
+* Open the software that is linked to the machine. It is called **shopBot V3**
 
 * Close the little window the pops up, not needed.
 
