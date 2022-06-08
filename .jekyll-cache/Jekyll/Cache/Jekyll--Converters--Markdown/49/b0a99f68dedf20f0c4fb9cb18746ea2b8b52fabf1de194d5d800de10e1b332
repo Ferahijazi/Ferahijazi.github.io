@@ -1,0 +1,24 @@
+I"{<p><strong>Defining Goals</strong> :</p>
+
+<ul>
+  <li>Make a PCB board using Kicad</li>
+  <li>Play around with the design to make it something expressive</li>
+</ul>
+
+<hr />
+
+<p>After watching the video from the electronics design week and getting familiarized a little bit with the different components and what they do.</p>
+
+<p><strong>Some of the components mentioned</strong> :</p>
+
+<p>Ribbon Cable (wires in a ribbon) and is graded by what is called <strong>AWG</strong> which refers to the gauge of the diameter. Gauge is a measure of the size of a wire which correlates with how much current you can put through the wire.</p>
+
+<p><img src="/images/ribbon_cable.webp" alt="" width="50" height="50" /></p>
+
+<hr />
+
+<p>First, I installed the fab academy library which can be found on the electronics design week and added to kicad.</p>
+
+<p>https://www.youtube.com/watch?v=c2niS9ZRBHo</p>
+
+:ET
