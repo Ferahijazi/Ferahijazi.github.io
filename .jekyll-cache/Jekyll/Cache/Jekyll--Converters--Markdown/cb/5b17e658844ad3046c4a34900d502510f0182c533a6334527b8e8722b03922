@@ -1,0 +1,75 @@
+I"Ý<p>Back to basics, for today I will practice some simple exercises such as making an LED blink!</p>
+
+<ul>
+  <li>
+    <p>A <strong>red</strong> LED drops about 2 volts while <strong>blue</strong> drops about 3 volts, for a resistor 15 mA is a good amount. Anything from a 100 to a 1000 ohms is fine.</p>
+  </li>
+  <li>
+    <p>Connect the Resistors in a series with LEDs, not in parellel</p>
+  </li>
+</ul>
+
+<hr />
+
+<p>Second trial, adding a <strong>push button</strong></p>
+
+<p>What is needed :</p>
+
+<ol>
+  <li>An arduino board.</li>
+  <li>A bread board.</li>
+  <li>LED</li>
+  <li>Push Button</li>
+  <li>Wires!</li>
+  <li>2 resistors (18)</li>
+</ol>
+
+<p>setup:</p>
+
+<p><img src="/images/Screenshot 2022-06-23 at 10.48.13.png" alt="" /></p>
+
+<p><img src="/images/arduino_button_blinking_light.jpg" alt="" /></p>
+
+<p>Code:</p>
+
+<p><img src="/images/code_button.png" alt="" /></p>
+
+<hr />
+
+<p>Third one with a temperature sensor</p>
+
+<p>Dallas 18B20 can read temp from - 55 to 125 and has a resolution of 9-12 bit and has a 64 bit addressing</p>
+
+<p>The sensor has 3 legs, far left is GND, second one is data and last is VCC</p>
+
+<hr />
+
+<p>There are two types of <strong>transistors</strong> :</p>
+
+<ul>
+  <li>
+    <p>Bipolar</p>
+  </li>
+  <li>
+    <p>Field Effect</p>
+  </li>
+</ul>
+
+<hr />
+
+<p>There are two functions for <strong>transistors</strong> :</p>
+
+<ul>
+  <li>
+    <p>Switch circuits on and off</p>
+  </li>
+  <li>
+    <p>Amplify signals</p>
+  </li>
+</ul>
+
+<hr />
+
+<p>The left leg of the transistor functions as an emitor while the right leg functions as a collector and the symbol for the emitor side is marked with an arrow. The current always flows from the collector to the emitor and therefore the emitor should always be connected to ground</p>
+
+:ET

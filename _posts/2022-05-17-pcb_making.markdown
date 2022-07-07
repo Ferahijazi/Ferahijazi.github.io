@@ -6,8 +6,28 @@ image:  /closed.jpg
 tags:   PCB 
 
 ---
+### Intro 
+
+I started off by watching an intro on *PCB* on youtube
+https://www.youtube.com/watch?v=vaCVh2SAZY4
+
+Some concepts :
+
+* Surface Mount Technology (SMT) : the components are placed and soldered on one layer
+* PCB stands for Printed Circuit Board which is a board or a card that electrically connects and mechanically supports electrical components 
+* The connections are made with **conductive tracks/traces** usually made out of copper
+* The copper is laminated in between sheets of non conductive material like fiber glass and epoxy resin, the resin part is flame resistent and meets the flame retardant grade four standard (FR4)
+* A thin sheet of copper is pressed and heated onto the substrate
+* With the double or multi sided PCBs, A drill bores out a chunk of copper and substraye. *Electroplating* is the process of adding a think layer of copper.
+* A solder mask layer is often added on most of the top of the board. **lacquer like polymer** is placed on places where we don't want to solder components
+* Solder Mask Keepout
+* A layer of ink is added to help us identify our components
+
+
+
 ### PCB Copper Plates Types
 
+---
 
 * When it comes to PCBs, the copper plates can be either one sided or double sided or even multilayered. *Singel Sided* has only one layer of conducting material on one side of the board. The single sided are one of the most commonly fabricated boards as they are very simple and basic to make.
 
@@ -245,7 +265,28 @@ Tinker the setting of the mill outline on the right side because it is metric
 
 ---
 
+### Soldering tips and tricks
 
+* Place the soldering iron tip on the location you would like to solder and hold it firmly
+* Then melt the solder while still holding the soldering iron tip in place
+* If you want to remove some extra solder there is three different ways to help you do that.
+* 
+
+---
+
+### Components
+
+There are many different components available at the fablab
+
+---
+To familiarize myself with some concepts in relation to electronics, I turned to the Art of Electronics by Paul Horowitz
+
+Electronic circuits, there are two quantities to keep track of : 
+
+* Voltage
+* Current
+
+The most useful device to measure voltages & currents is called oscilloscope 
 
 
 

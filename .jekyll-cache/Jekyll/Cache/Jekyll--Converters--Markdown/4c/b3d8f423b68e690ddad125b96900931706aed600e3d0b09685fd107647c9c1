@@ -1,8 +1,8 @@
-I"Ä<p><strong>Defining Goals</strong> :</p>
+I"±<p><strong>Defining Goals</strong> :</p>
 
 <ul>
   <li>Make a PCB board using Kicad</li>
-  <li>Play around with the design to make it something expressive</li>
+  <li>Play around with the design to make it look more expressive, shaped like a cat for example</li>
 </ul>
 
 <hr />
@@ -38,6 +38,21 @@
 <hr />
 
 <h4 id="circuits">Circuits!</h4>
+
+<p>I figured I should first familiarized myself a little bit with circuits so I watched a few videos explaining Ohms law. I already got an introduction to electricity thanks to the arduino course, there are more videos to watch yet I will revisit them later.</p>
+
+<p>Drawing circuits is called EDA which stands for electronics design automation
+The drawings need to be hirarchical and parametric 
+There are <em>footprints</em>
+<em>Kirchhoffâ€™s current law</em></p>
+
+<h2 id="refdes-is-a-combination-of-numbers-and-letters-used-to-identify-electrical-components-on-a-board"><strong>REFDES</strong> is a combination of numbers and letters used to identify electrical components on a board</h2>
+
+<h4 id="learning-kicad">Learning kicad</h4>
+
+<p>As an excerise I followed along <em>an intro to Kicad</em> Series on youtube. I created a local library and created a symbol inside of it. Then</p>
+
+<p>Putting the datasheet &amp; the schematic desing side by side can be useful</p>
 
 <hr />
 <h4 id="steps-">Steps :</h4>

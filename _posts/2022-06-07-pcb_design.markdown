@@ -10,7 +10,7 @@ tags:   PCB Kicad
 **Defining Goals** :
 
 * Make a PCB board using Kicad
-* Play around with the design to make it something expressive
+* Play around with the design to make it look more expressive, shaped like a cat for example
 
 ---
 
@@ -41,12 +41,29 @@ After watching the video from the electronics design week and getting familiariz
 
 #### Circuits!
 
+I figured I should first familiarized myself a little bit with circuits so I watched a few videos explaining Ohms law. I already got an introduction to electricity thanks to the arduino course, there are more videos to watch yet I will revisit them later.
+
+Drawing circuits is called EDA which stands for electronics design automation
+The drawings need to be hirarchical and parametric 
+There are *footprints*
+*Kirchhoff's current law* 
+
+**REFDES** is a combination of numbers and letters used to identify electrical components on a board
+---
+
+#### Learning kicad
+
+As an excerise I followed along *an intro to Kicad* Series on youtube. I created a local library and created a symbol inside of it. Then 
+
+Putting the datasheet & the schematic desing side by side can be useful
+
 
 
 --- 
 #### Steps :
 
 * First, I installed the fab academy library which can be found on the electronics design week and added it to kicad.
+
 
 https://www.youtube.com/watch?v=c2niS9ZRBHo
 

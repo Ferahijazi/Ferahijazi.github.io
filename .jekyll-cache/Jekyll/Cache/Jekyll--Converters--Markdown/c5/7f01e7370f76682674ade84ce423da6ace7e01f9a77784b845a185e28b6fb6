@@ -1,4 +1,25 @@
-I"5&<h3 id="pcb-copper-plates-types">PCB Copper Plates Types</h3>
+I"u.<h3 id="intro">Intro</h3>
+
+<p>I started off by watching an intro on <em>PCB</em> on youtube
+https://www.youtube.com/watch?v=vaCVh2SAZY4</p>
+
+<p>Some concepts :</p>
+
+<ul>
+  <li>Surface Mount Technology (SMT) : the components are placed and soldered on one layer</li>
+  <li>PCB stands for Printed Circuit Board which is a board or a card that electrically connects and mechanically supports electrical components</li>
+  <li>The connections are made with <strong>conductive tracks/traces</strong> usually made out of copper</li>
+  <li>The copper is laminated in between sheets of non conductive material like fiber glass and epoxy resin, the resin part is flame resistent and meets the flame retardant grade four standard (FR4)</li>
+  <li>A thin sheet of copper is pressed and heated onto the substrate</li>
+  <li>With the double or multi sided PCBs, A drill bores out a chunk of copper and substraye. <em>Electroplating</em> is the process of adding a think layer of copper.</li>
+  <li>A solder mask layer is often added on most of the top of the board. <strong>lacquer like polymer</strong> is placed on places where we don’t want to solder components</li>
+  <li>Solder Mask Keepout</li>
+  <li>A layer of ink is added to help us identify our components</li>
+</ul>
+
+<h3 id="pcb-copper-plates-types">PCB Copper Plates Types</h3>
+
+<hr />
 
 <ul>
   <li>When it comes to PCBs, the copper plates can be either one sided or double sided or even multilayered. <em>Singel Sided</em> has only one layer of conducting material on one side of the board. The single sided are one of the most commonly fabricated boards as they are very simple and basic to make.</li>
@@ -306,5 +327,32 @@ Tinker the setting of the mill outline on the right side because it is metric</p
 </ul>
 
 <hr />
+
+<h3 id="soldering-tips-and-tricks">Soldering tips and tricks</h3>
+
+<ul>
+  <li>Place the soldering iron tip on the location you would like to solder and hold it firmly</li>
+  <li>Then melt the solder while still holding the soldering iron tip in place</li>
+  <li>If you want to remove some extra solder there is three different ways to help you do that.</li>
+  <li></li>
+</ul>
+
+<hr />
+
+<h3 id="components">Components</h3>
+
+<p>There are many different components available at the fablab</p>
+
+<hr />
+<p>To familiarize myself with some concepts in relation to electronics, I turned to the Art of Electronics by Paul Horowitz</p>
+
+<p>Electronic circuits, there are two quantities to keep track of :</p>
+
+<ul>
+  <li>Voltage</li>
+  <li>Current</li>
+</ul>
+
+<p>The most useful device to measure voltages &amp; currents is called oscilloscope</p>
 
 :ET
