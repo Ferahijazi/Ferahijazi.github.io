@@ -44,6 +44,14 @@ setup:
 
  ---
 
+ #### Understanding push buttons & pull up & pull down resistors 
+
+ * Depending on whether you place the resistor to the ground or to the 5v, the 5v would be a pull up resistor because the current flowing to open the circuit is going up and with pull down it is going down to the ground. Open reads HIGH or 1 and short reads LOW or 0
+
+ * If we add a digitalRead 
+
+ ---
+
  #### Potentiometers
 
  Potentiometers are a way to control the amount of resistance 
@@ -198,12 +206,39 @@ Joystick to control a servo!
 * Add a push button to the bread board
 Same for the DC Motor!
 
+---
+
 **Software**
 
 * load library 
 
 ![]({{ site.baseurl }}/images/include_stepper.png)
 
+some terminology associated with the stepper :
+
+* Steps per revolution can be found on the datasheet of the stepper, for instance the one I tried to use has a 2048 steps, this number is important to define how many steps exist in one lap or circle. you can define steps per revolution as an int before the start setup and assign the number in the datasheet to it.
+* There is also a command called Stepper from the stepper librar, you can define the stepper by typing Stepper (give it a name) such as myStepper (tell it how many steps for this motor to complete a cycle/ a revolution) and since we already defined that as stepsPerRevolution, we can include the name of the variable. then afterwards define the pins that the stepper driver is connected to, 8-11. so it would look something like that : Stepper myStepper (stepsPerRevolution,8,9,10,11);
+In the void setup we can define the speed of the motor, myStepper.**setSpeed** also part of the library then (name of variable) which should be defined as an int, we give it a variable to indicate the speed of the motor which is defined before void setup i.e. int motSpeed
+
+so the line of code would be : myStepper.setSpeed(motSpeed);
+These stepper motors can't run too fast, so giving it a 10 rpm
+
+* In the void loop, we can tell it to turn one cycle clock wise then turn one cycle counter clockwise : 
+
+* myStepper.**step**(stepsPerRevolution);
+* then give it a delay :
+* delay(**delayTime**), also a variable indicated before void setup i.e. int delayTime = 200; 
+* myStepper.**step**(-stepsPerRevolution);
+* delay(**delayTime**);
+
+---
+![]({{ site.baseurl }}/images/code_Steps.png)
+
+---
+
+### Adding a push button to the same setup 
+
+The interesting part here is to use the push button as an inputPin then write on it with a digitalWrite and give it a HIGH.
 ---
 
 ### Tilt switches
@@ -214,3 +249,10 @@ As the  name implies, it switches value when you tilt it! It's pretty fun and si
 
 The following example sends an order to light up a green led if it is tilted downward and light up a red one if it is tilted upwards 
 
+---
+
+### Understanding Hexadecimal Numbers & Why they are important
+
+* Computer are really good at one thing, turning on and off tiny switches over and over again.
+
+* You take on data (music, visuals, whatever you want) and turn it into numbers, 0s & 1s. For example, I can represent any color with a bunch of zeros and ones i.e. 11111111 represents green. Through the serial monitor you can translate the numbers to hexadecimal numbers or binary. With hexadecimal numbers after reaching 9 (4 binary digits) we switch to A which is equal to 10 in decimal numbers and 1010 in binary. With hexadecimal, it is easier to keep track of commands than binary. You can also tell the arduino to read in decemal. Serial.println(byte,DEC); 

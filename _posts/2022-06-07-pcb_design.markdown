@@ -14,6 +14,9 @@ tags:   PCB Kicad
 
 ---
 
+* Note : **learning arduino** helps with prototyping, you can create your prototype to understand which components you need for your project as well as how to connect them. Then you can take the prototype and recreate it in kicad.
+---
+
 After watching the video from the electronics design week and getting familiarized a little bit with the different **components** and what they do.
 
 **Some of the components mentioned** :
@@ -48,23 +51,83 @@ The drawings need to be hirarchical and parametric
 There are *footprints*
 *Kirchhoff's current law* 
 
-**REFDES** is a combination of numbers and letters used to identify electrical components on a board
+**REFDES** which stands for *reference designator* is a combination of numbers and letters used to identify electrical components on a board. 
 ---
 
 #### Learning kicad
 
-As an excerise I followed along *an intro to Kicad* Series on youtube. I created a local library and created a symbol inside of it. Then 
+As an excerise I followed along *an intro to Kicad* Series on youtube. I created a local library and created a symbol inside of it.  
 
-Putting the datasheet & the schematic desing side by side can be useful
+Note: Putting the datasheet & the schematic desing side by side can be useful
 
 
 
 --- 
 #### Steps :
 
-* First, I installed the fab academy library which can be found on the electronics design week and added it to kicad.
+* First, I installed the **fab academy library** which can be found on the electronics design week and added it to kicad.
+
+https://gitlab.fabcloud.org/pub/libraries/electronics/kicad
+
+* Go to preferences > Manage Symbol Libraries
+* This will open **symbol library** > add "fab.kicad_sym" there
+* Go to preferences > Manage Footprint Libraries
+* Add "fab.pretty" there
+* Go to preferences > Configure Paths and add variable named **FAB** that points to the installation directory of the fab library as in where you saved the library on your computer.
+
+---
+
+##### Starting a new project
+
+* File > new project
+* Name your project and save it in a suitable folder
+* Two files will pop up on the left side > the schematic file & a blank pcb file
 
 
 https://www.youtube.com/watch?v=c2niS9ZRBHo
 
+##### Running the library editor 
 
+ ![]({{ site.baseurl }}/images/steps_kicad.png)
+
+* Go to tools > symbol editor and press ok to load the library 
+
+* File > new library > project > local and create a new library for the components
+
+* **Note** if you want to store your component in a larger library that is accessible by all your projects you can choose global. The advantage of having your library assigned to a project specific (local) is that it becomes easier to share your custom parts if you were to upload your project to say something like GitHub
+
+* Add a new symbol : following the tutorial, the component was named as 7555 which is an intigrated circuit derived from 555 made back in the 70s. The older version was made with bipolar transistors intended for things like oscillators and pulse generators. The 7555 works just like the 555 but instead of bipolar transistors, it uses CMOS. CMOS can operate at lower voltages, for our project it will be powered by a 3 volt coin cell battery 
+
+* Google the reference designator. There we can see that intigrated circuits like our example 7555 is references by the letter U
+
+ ![]({{ site.baseurl }}/images/reference_desig.png)
+
+ * Save it! 
+
+ * Click the add pins button and add GND, number 1 following the datasheet and do the same for the others.
+ Keep in mind that the way to name active low pins is by typing ~{NAME}
+
+ *  Look at the **Data Sheet** for specifics
+
+  ![]({{ site.baseurl }}/images/datasheet_7555.png)
+  *Active low pins are specified by the dash on top of the name*
+
+  * **Advice** putting the datasheet and the library editor side by side can be helpful
+
+  * Then go to http://www.555-timer-circuits.com/flashing-led.html and keep this schematic next to your library editor in order to know how to place your pins. Using move and rotate (r on keyboard) fix them accordingly
+
+    ![]({{ site.baseurl }}/images/schematic_led_7555.png)
+    *Add a rectangle around it once you are done!*
+
+    * At the end of this part, you should have this schematic 
+
+     ![]({{ site.baseurl }}/images/schematic_symbol_7555.png)
+
+---
+
+##### Schematic Capture/Editor
+
+* Some information, the numbers and letters in between the boarders are a way to refer to sections. For instance you could refer to an issue located at b4 and other engineers can know where to look.
+
+
+![]({{ site.baseurl }}/images/b4.png)
