@@ -1,0 +1,159 @@
+I"C <p><strong>Defining Goals</strong> :</p>
+
+<ul>
+  <li>Make a PCB board using Kicad</li>
+  <li>Play around with the design to make it look more expressive, shaped like a cat for example</li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>
+    <h2 id="note--learning-arduino-helps-with-prototyping-you-can-create-your-prototype-to-understand-which-components-you-need-for-your-project-as-well-as-how-to-connect-them-then-you-can-take-the-prototype-and-recreate-it-in-kicad">Note : <strong>learning arduino</strong> helps with prototyping, you can create your prototype to understand which components you need for your project as well as how to connect them. Then you can take the prototype and recreate it in kicad.</h2>
+  </li>
+</ul>
+
+<p>After watching the video from the electronics design week and getting familiarized a little bit with the different <strong>components</strong> and what they do.</p>
+
+<p><strong>Some of the components mentioned</strong> :</p>
+
+<ul>
+  <li><strong>Ribbon Cable</strong> (wires in a ribbon) and is graded by what is called <strong>AWG</strong> which refers to the gauge of the diameter. Gauge is a measure of the size of a wire which correlates with how much current you can put through the wire.</li>
+</ul>
+
+<p><img src="/images/ribbon_cable.webp" alt="" width="40" height="40" /></p>
+
+<ul>
+  <li>
+    <p><strong>IDC Connector</strong></p>
+  </li>
+  <li><strong>Slide Switch</strong> can be used as a configuration switch or a low power switch.</li>
+  <li><strong>Resistor</strong> used for limiting the flow of current</li>
+  <li><strong>Capacitor</strong> used for local charge storage</li>
+  <li><strong>Polarized capacitors</strong> is a component that is been a capacitor and a battery, they can store large amounts of power</li>
+  <li><strong>Crystal/Resonator</strong> are used to determine time. Mainly used to determine high resolution timing/high accuracy</li>
+  <li><strong>Inductor</strong> when a current flows through it, it creates a magnetic field</li>
+  <li><strong>Diods</strong> the current can go only in one direction. There are two sides to the diod, one is called anode and the other cathode</li>
+  <li><strong>LEDs</strong> are a particular kind of diod. LEDs have a particular indication for direction. For instance, if you see a green line on one side and it is on the cathode side. You always use an LED with a current limiting resistor and the resistor will determine how bright the LED is going to be</li>
+  <li><strong>Transistor</strong> there are bipolar ones, which we are not going to use. Mosfits are one of the key components in the class, there is a P mosift (source of current) and an N mosfit(sink of current). There is a drain and a source on one side and the gate on the other. RDS is the resistence between the drain and the source. Both are used to control things that take a lot of current like motors or speakers.</li>
+  <li><strong>Regulators</strong> are regulated by current input voltage and output voltage. You need a capacitor on the right side</li>
+  <li><strong>Amplifiers</strong> are now built into the processor, you can pick them in software and you don’t need a seperate component.</li>
+  <li><strong>Micro-controllers</strong> are a world of their own, there is so much to cover and learn about.</li>
+</ul>
+
+<hr />
+
+<h4 id="circuits">Circuits!</h4>
+
+<p>I figured I should first familiarized myself a little bit with circuits so I watched a few videos explaining Ohms law. I already got an introduction to electricity thanks to the arduino course, there are more videos to watch yet I will revisit them later.</p>
+
+<p>Drawing circuits is called EDA which stands for electronics design automation
+The drawings need to be hirarchical and parametric 
+There are <em>footprints</em>
+<em>Kirchhoff’s current law</em></p>
+
+<h2 id="refdes-which-stands-for-reference-designator-is-a-combination-of-numbers-and-letters-used-to-identify-electrical-components-on-a-board"><strong>REFDES</strong> which stands for <em>reference designator</em> is a combination of numbers and letters used to identify electrical components on a board.</h2>
+
+<h4 id="learning-kicad">Learning kicad</h4>
+
+<p>As an excerise I followed along <em>an intro to Kicad</em> Series on youtube. I created a local library and created a symbol inside of it.</p>
+
+<p>Note: Putting the datasheet &amp; the schematic desing side by side can be useful</p>
+
+<hr />
+<h4 id="steps-">Steps :</h4>
+
+<ul>
+  <li>First, I installed the <strong>fab academy library</strong> which can be found on the electronics design week and added it to kicad.</li>
+</ul>
+
+<p>https://gitlab.fabcloud.org/pub/libraries/electronics/kicad</p>
+
+<ul>
+  <li>Go to preferences &gt; Manage Symbol Libraries</li>
+  <li>This will open <strong>symbol library</strong> &gt; add “fab.kicad_sym” there</li>
+  <li>Go to preferences &gt; Manage Footprint Libraries</li>
+  <li>Add “fab.pretty” there</li>
+  <li>Go to preferences &gt; Configure Paths and add variable named <strong>FAB</strong> that points to the installation directory of the fab library as in where you saved the library on your computer.</li>
+</ul>
+
+<hr />
+
+<h5 id="starting-a-new-project">Starting a new project</h5>
+
+<ul>
+  <li>File &gt; new project</li>
+  <li>Name your project and save it in a suitable folder</li>
+  <li>Two files will pop up on the left side &gt; the schematic file &amp; a blank pcb file</li>
+</ul>
+
+<p>https://www.youtube.com/watch?v=c2niS9ZRBHo</p>
+
+<h5 id="running-the-library-editor">Running the library editor</h5>
+
+<p><img src="/images/steps_kicad.png" alt="" /></p>
+
+<ul>
+  <li>
+    <p>Go to tools &gt; symbol editor and press ok to load the library</p>
+  </li>
+  <li>
+    <p>File &gt; new library &gt; project &gt; local and create a new library for the components</p>
+  </li>
+  <li>
+    <p><strong>Note</strong> if you want to store your component in a larger library that is accessible by all your projects you can choose global. The advantage of having your library assigned to a project specific (local) is that it becomes easier to share your custom parts if you were to upload your project to say something like GitHub</p>
+  </li>
+  <li>
+    <p>Add a new symbol : following the tutorial, the component was named as 7555 which is an intigrated circuit derived from 555 made back in the 70s. The older version was made with bipolar transistors intended for things like oscillators and pulse generators. The 7555 works just like the 555 but instead of bipolar transistors, it uses CMOS. CMOS can operate at lower voltages, for our project it will be powered by a 3 volt coin cell battery</p>
+  </li>
+  <li>
+    <p>Google the reference designator. There we can see that intigrated circuits like our example 7555 is references by the letter U</p>
+  </li>
+</ul>
+
+<p><img src="/images/reference_desig.png" alt="" /></p>
+
+<ul>
+  <li>
+    <p>Save it!</p>
+  </li>
+  <li>
+    <p>Click the add pins button and add GND, number 1 following the datasheet and do the same for the others.
+ Keep in mind that the way to name active low pins is by typing ~{NAME}</p>
+  </li>
+  <li>
+    <p>Look at the <strong>Data Sheet</strong> for specifics</p>
+  </li>
+</ul>
+
+<p><img src="/images/datasheet_7555.png" alt="" />
+  <em>Active low pins are specified by the dash on top of the name</em></p>
+
+<ul>
+  <li>
+    <p><strong>Advice</strong> putting the datasheet and the library editor side by side can be helpful</p>
+  </li>
+  <li>
+    <p>Then go to http://www.555-timer-circuits.com/flashing-led.html and keep this schematic next to your library editor in order to know how to place your pins. Using move and rotate (r on keyboard) fix them accordingly</p>
+
+    <p><img src="/images/schematic_led_7555.png" alt="" />
+<em>Add a rectangle around it once you are done!</em></p>
+
+    <ul>
+      <li>At the end of this part, you should have this schematic</li>
+    </ul>
+
+    <p><img src="/images/schematic_symbol_7555.png" alt="" /></p>
+  </li>
+</ul>
+
+<hr />
+
+<h5 id="schematic-captureeditor">Schematic Capture/Editor</h5>
+
+<ul>
+  <li>Some information, the numbers and letters in between the boarders are a way to refer to sections. For instance you could refer to an issue located at b4 and other engineers can know where to look.</li>
+</ul>
+
+<p><img src="/images/b4.png" alt="" /></p>
+:ET
