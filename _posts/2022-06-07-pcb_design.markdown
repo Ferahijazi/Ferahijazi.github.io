@@ -3,13 +3,13 @@ layout: post
 title:  PCB Design
 date:   2022-06-07
 image:  
-tags:   PCB Kicad
+tags:   PCB KiCad
 
 ---
 
 **Defining Goals** :
 
-* Make a PCB board using Kicad
+* Make a PCB board using KiCad
 * Play around with the design to make it look more expressive, shaped like a cat for example
 
 ---
@@ -98,7 +98,7 @@ https://www.youtube.com/watch?v=c2niS9ZRBHo
 
 * Add a new symbol : following the tutorial, the component was named as 7555 which is an intigrated circuit derived from 555 made back in the 70s. The older version was made with bipolar transistors intended for things like oscillators and pulse generators. The 7555 works just like the 555 but instead of bipolar transistors, it uses CMOS. CMOS can operate at lower voltages, for our project it will be powered by a 3 volt coin cell battery 
 
-* Google the reference designator. There we can see that intigrated circuits like our example 7555 is references by the letter U
+* Google the reference designator. There we can see that intigrated circuits like our example 7555 is referenced by the letter U
 
  ![]({{ site.baseurl }}/images/reference_desig.png)
 
@@ -127,7 +127,98 @@ https://www.youtube.com/watch?v=c2niS9ZRBHo
 
 ##### Schematic Capture/Editor
 
-* Some information, the numbers and letters in between the boarders are a way to refer to sections. For instance you could refer to an issue located at b4 and other engineers can know where to look.
+* Some information: the numbers and letters in between the boarders are a way to refer to sections. For instance you could refer to an issue located at b4 and other engineers can know where to look.
 
 
 ![]({{ site.baseurl }}/images/b4.png)
+*Section b4*
+
+* Bottom right contains information about your schematic, similar to autocad basically. To fill this part out in case you want to share your schematic or keep track of changes go to file > page settings
+
+* Go to place > add symbol and choose the symbol we created. Alternatively you could press A on your keyboard. Then do the same and add 3 basic resistors. Remember that is where the arduino prototype comes in handy you just add the components based on your prototype and then connect them accordingly!
+
+* double click on R and rename according to the resistors used, 2 are 22k in our example, 10 k, 3 are 100k, 330k
+
+* Then we repeated the same process, for 2 capacitors and name one 10uF and the other 100uF
+* Then again for the LEDs (2) rename RED
+* Then lastly a transistor 2N3904
+* Kicad doesn't have a battery holder or slide switch that we need for our board, so we can use a third party such as digi-key. So we got it from github.com/digikey/digikey-kicad-library repeat the same process as we have done for the fab library. Add this specific library from the file  :
+ **dk_Battery-Holders-Clips-Contacts.lib** and **
+* Press a on your keyboard and select **BS-7** battery from the new library you just added! Do the same for the slide switch **EG1218**
+* Adding **Flags** helps, as it adds the effect of connecting things together without having to look at wires on the screen.Any node with a flag name is automatically connected to other nods with the same flag &name. Powering ground flags on schematics & VCCs (basically all the components wired to a common ground o vcc)
+* Add **wires** start with the GND on the far left and connect it to the negative battery pin, this tells Kicad that we intend for the negative battery terminal to be connected to all the other GND node pins
+
+![]({{ site.baseurl }}/images/GND_VCC_7555.png)
+*Wires connected on the left side*
+
+---
+
+**Completed schematic plan**
+
+![]({{ site.baseurl }}/images/schematic_7555_comp.png)
+
+---
+
+#### Create a footprint in KiCad
+
+(Most probably won't need to do that but thought I'd go along with the tutorial and learn it anyways!)
+
+* Open the **INTERSIL** datasheet
+* Go to tools > create footprint
+* File > new footprint and name it as ICM7555-PDIP as that will assoiciate it with the exact part from the intersil datasheet! and shows that we are using the plastic dual in-line package
+* File > new library > local > make sure it is in the folder of your project and name it as 555_Badge. Note that .pretty stands for footprint library
+* Preferences > manage footprint libraries and you will see that it is associated with the footprint library you just created
+* Units, when it comes to PCBs some datasheets will give you data in mm and others will give you data in inches and some will give them to you in both.
+* Create pads, go to place > add pad then right click to give it a number and position it correctly. For the pad type choose through hole and choose circle for the pad shape as well as hole shope. Choose 0.03 for the hole size. Pad size in inch is 0.06. The specifications can be found on the datasheet! Always go for the max just to leave room for mistakes
+* **Outline** Click place > line, double click on the line to edit it. The thickness 0.004, start point 0.2 for x and 0.14 for y and end point 0.2 for x and - 0.14 for y, choose **F.Fab** layer
+* On the right side, click on F.Fab to change our layer, then add an arc in the middle, click and on the bottom you will see the x and y coordinate, press space to add a relative distance click at -0.2 and zero then click again at -0.2 and -0.05.Then edit its properties and make sure the angle is 180, also change the line thickness to 0.004
+* then add two vertical lines on top of the lines we have with thickness of 0.008 on layer silkscreen
+* Then add a small circle on the left bottom side with the width of 0.008
+
+![]({{ site.baseurl }}/images/footprint_555.png)
+
+---
+
+#### Associate Footprints and Generate Netlist
+
+* First press on **run footprint assigment tool** it will replace all the ? marks with numbers
+* Go to preferences > manage symbol libraries and check if you have the global ones loaded 
+* Go back to the runn footprint assigment tool, in there click preferences manage footprint libraries
+* Go to github.com/kicad and download the foot print reposotory and save it in the libraries folder, make a new foder there called kicad and add it there. 
+* Add the footprint library from kicad reposotory as well as the digi key footprint one
+* on the left side you will see the new libraries loaded
+* You can filter footprints based on keywords or pin count or according to footprints available in a specific library
+
+![]({{ site.baseurl }}/images/footprint_associate.png)
+
+* Do some research on the type of capacitor needed, we know that we want it to be aluminum electrolytic capacitor, through hole with 10uf, select those filters. on digi-key.com search for capacitor and add those filters
+
+* There are two types of through the hole parts : radial(extend from the radius of the cylinder) or axial(extend from the main axis of the cylinder)
+
+![]({{ site.baseurl }}/images/radial_v_axial.png)
+
+* We are looking for a capacitor that is THT(through the hole) with a radial, 5 mm and pin spacing of 2 mm
+* Repeat same process for the capacitor with the 100uf (research, fine, attribute)
+* For the **LED** also through hole, D3.0
+* **Resistor**
+
+![]({{ site.baseurl }}/images/assigned_footprints.png)
+*All the assigned footprints*
+
+* Save!
+
+---
+
+#### Place parts and define Outline
+
+* File > page settings (fill it out the same as we did with the schematic)
+* Be mindful of units
+* Tools > update pcv based on schematic
+* Head to https://oshpark.com/ to find information about the board we are making. There go to support > see all docs > KiCad > Manually set the design rules
+* It would be helpful to put the design rules and the kicad folder side by side
+* Go to file > board Setup > Solder Mask/Paste to determin **Solder Mask Clearance** how much space there should be between the pad and the start of the solder mask, check the specifications on the website, 0.002
+* **Design Rules** make sure do not allow micro vias is selected
+* **Via** is like a through-hole(yet they are much smaller) in the board where the copper and substrate layers are drilled, copper is added using an electroplating process. They connect copper or traces between layers. Uvia stands for micro via. Make Clearance & track a little bit bigger than the board houses minimum specifications, 0.01. Via diameter 0.03 and drill to 0.015
+* Move all parts so they are not piled on top of each other, the wire connecting them are called *air wires* they are helpful in figuring out how parts should be connected with traces. The entire group of *air wires* is known as **ratsnest** because it looks like a ratsnest
+* Show *boards ratsnest* to toggle between switching on and off the ratsnest
+* For drawing an **outline** move to the Edge.Cuts layer and select a line
