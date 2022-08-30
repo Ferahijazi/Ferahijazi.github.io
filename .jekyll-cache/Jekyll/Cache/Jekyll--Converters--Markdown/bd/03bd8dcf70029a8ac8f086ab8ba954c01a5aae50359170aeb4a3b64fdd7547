@@ -1,0 +1,270 @@
+I"�?<p><strong>Defining Goals</strong> :</p>
+
+<ul>
+  <li>Make a PCB board using KiCad</li>
+  <li>Play around with the design to make it look more expressive, shaped like a cat for example</li>
+</ul>
+
+<hr />
+
+<ul>
+  <li>
+    <h2 id="note--learning-arduino-helps-with-prototyping-you-can-create-your-prototype-to-understand-which-components-you-need-for-your-project-as-well-as-how-to-connect-them-then-you-can-take-the-prototype-and-recreate-it-in-kicad">Note : <strong>learning arduino</strong> helps with prototyping, you can create your prototype to understand which components you need for your project as well as how to connect them. Then you can take the prototype and recreate it in kicad.</h2>
+  </li>
+</ul>
+
+<p>After watching the video from the electronics design week and getting familiarized a little bit with the different <strong>components</strong> and what they do.</p>
+
+<p><strong>Some of the components mentioned</strong> :</p>
+
+<ul>
+  <li><strong>Ribbon Cable</strong> (wires in a ribbon) and is graded by what is called <strong>AWG</strong> which refers to the gauge of the diameter. Gauge is a measure of the size of a wire which correlates with how much current you can put through the wire.</li>
+</ul>
+
+<p><img src="/images/ribbon_cable.webp" alt="" width="40" height="40" /></p>
+
+<ul>
+  <li>
+    <p><strong>IDC Connector</strong></p>
+  </li>
+  <li><strong>Slide Switch</strong> can be used as a configuration switch or a low power switch.</li>
+  <li><strong>Resistor</strong> used for limiting the flow of current</li>
+  <li><strong>Capacitor</strong> used for local charge storage</li>
+  <li><strong>Polarized capacitors</strong> is a component that is been a capacitor and a battery, they can store large amounts of power</li>
+  <li><strong>Crystal/Resonator</strong> are used to determine time. Mainly used to determine high resolution timing/high accuracy</li>
+  <li><strong>Inductor</strong> when a current flows through it, it creates a magnetic field</li>
+  <li><strong>Diods</strong> the current can go only in one direction. There are two sides to the diod, one is called anode and the other cathode</li>
+  <li><strong>LEDs</strong> are a particular kind of diod. LEDs have a particular indication for direction. For instance, if you see a green line on one side and it is on the cathode side. You always use an LED with a current limiting resistor and the resistor will determine how bright the LED is going to be</li>
+  <li><strong>Transistor</strong> there are bipolar ones, which we are not going to use. Mosfits are one of the key components in the class, there is a P mosift (source of current) and an N mosfit(sink of current). There is a drain and a source on one side and the gate on the other. RDS is the resistence between the drain and the source. Both are used to control things that take a lot of current like motors or speakers.</li>
+  <li><strong>Regulators</strong> are regulated by current input voltage and output voltage. You need a capacitor on the right side</li>
+  <li><strong>Amplifiers</strong> are now built into the processor, you can pick them in software and you don’t need a seperate component.</li>
+  <li><strong>Micro-controllers</strong> are a world of their own, there is so much to cover and learn about.</li>
+</ul>
+
+<hr />
+
+<h4 id="circuits">Circuits!</h4>
+
+<p>I figured I should first familiarized myself a little bit with circuits so I watched a few videos explaining Ohms law. I already got an introduction to electricity thanks to the arduino course, there are more videos to watch yet I will revisit them later.</p>
+
+<p>Drawing circuits is called EDA which stands for electronics design automation
+The drawings need to be hirarchical and parametric 
+There are <em>footprints</em>
+<em>Kirchhoff’s current law</em></p>
+
+<h2 id="refdes-which-stands-for-reference-designator-is-a-combination-of-numbers-and-letters-used-to-identify-electrical-components-on-a-board"><strong>REFDES</strong> which stands for <em>reference designator</em> is a combination of numbers and letters used to identify electrical components on a board.</h2>
+
+<h4 id="learning-kicad">Learning kicad</h4>
+
+<p>As an excerise I followed along <em>an intro to Kicad</em> Series on youtube. I created a local library and created a symbol inside of it.</p>
+
+<p>Note: Putting the datasheet &amp; the schematic desing side by side can be useful</p>
+
+<hr />
+<h4 id="steps-">Steps :</h4>
+
+<ul>
+  <li>First, I installed the <strong>fab academy library</strong> which can be found on the electronics design week and added it to kicad.</li>
+</ul>
+
+<p>https://gitlab.fabcloud.org/pub/libraries/electronics/kicad</p>
+
+<ul>
+  <li>Go to preferences &gt; Manage Symbol Libraries</li>
+  <li>This will open <strong>symbol library</strong> &gt; add “fab.kicad_sym” there</li>
+  <li>Go to preferences &gt; Manage Footprint Libraries</li>
+  <li>Add “fab.pretty” there</li>
+  <li>Go to preferences &gt; Configure Paths and add variable named <strong>FAB</strong> that points to the installation directory of the fab library as in where you saved the library on your computer.</li>
+</ul>
+
+<hr />
+
+<h5 id="starting-a-new-project">Starting a new project</h5>
+
+<ul>
+  <li>File &gt; new project</li>
+  <li>Name your project and save it in a suitable folder</li>
+  <li>Two files will pop up on the left side &gt; the schematic file &amp; a blank pcb file</li>
+</ul>
+
+<p>https://www.youtube.com/watch?v=c2niS9ZRBHo</p>
+
+<h5 id="running-the-library-editor">Running the library editor</h5>
+
+<p><img src="/images/steps_kicad.png" alt="" /></p>
+
+<ul>
+  <li>
+    <p>Go to tools &gt; symbol editor and press ok to load the library</p>
+  </li>
+  <li>
+    <p>File &gt; new library &gt; project &gt; local and create a new library for the components</p>
+  </li>
+  <li>
+    <p><strong>Note</strong> if you want to store your component in a larger library that is accessible by all your projects you can choose global. The advantage of having your library assigned to a project specific (local) is that it becomes easier to share your custom parts if you were to upload your project to say something like GitHub</p>
+  </li>
+  <li>
+    <p>Add a new symbol : following the tutorial, the component was named as 7555 which is an intigrated circuit derived from 555 made back in the 70s. The older version was made with bipolar transistors intended for things like oscillators and pulse generators. The 7555 works just like the 555 but instead of bipolar transistors, it uses CMOS. CMOS can operate at lower voltages, for our project it will be powered by a 3 volt coin cell battery</p>
+  </li>
+  <li>
+    <p>Google the reference designator. There we can see that intigrated circuits like our example 7555 is referenced by the letter U</p>
+  </li>
+</ul>
+
+<p><img src="/images/reference_desig.png" alt="" /></p>
+
+<ul>
+  <li>
+    <p>Save it!</p>
+  </li>
+  <li>
+    <p>Click the add pins button and add GND, number 1 following the datasheet and do the same for the others.
+ Keep in mind that the way to name active low pins is by typing ~{NAME}</p>
+  </li>
+  <li>
+    <p>Look at the <strong>Data Sheet</strong> for specifics</p>
+  </li>
+</ul>
+
+<p><img src="/images/datasheet_7555.png" alt="" />
+  <em>Active low pins are specified by the dash on top of the name</em></p>
+
+<ul>
+  <li>
+    <p><strong>Advice</strong> putting the datasheet and the library editor side by side can be helpful</p>
+  </li>
+  <li>
+    <p>Then go to http://www.555-timer-circuits.com/flashing-led.html and keep this schematic next to your library editor in order to know how to place your pins. Using move and rotate (r on keyboard) fix them accordingly</p>
+
+    <p><img src="/images/schematic_led_7555.png" alt="" />
+<em>Add a rectangle around it once you are done!</em></p>
+
+    <ul>
+      <li>At the end of this part, you should have this schematic</li>
+    </ul>
+
+    <p><img src="/images/schematic_symbol_7555.png" alt="" /></p>
+  </li>
+</ul>
+
+<hr />
+
+<h5 id="schematic-captureeditor">Schematic Capture/Editor</h5>
+
+<ul>
+  <li>Some information: the numbers and letters in between the boarders are a way to refer to sections. For instance you could refer to an issue located at b4 and other engineers can know where to look.</li>
+</ul>
+
+<p><img src="/images/b4.png" alt="" />
+<em>Section b4</em></p>
+
+<ul>
+  <li>
+    <p>Bottom right contains information about your schematic, similar to autocad basically. To fill this part out in case you want to share your schematic or keep track of changes go to file &gt; page settings</p>
+  </li>
+  <li>
+    <p>Go to place &gt; add symbol and choose the symbol we created. Alternatively you could press A on your keyboard. Then do the same and add 3 basic resistors. Remember that is where the arduino prototype comes in handy you just add the components based on your prototype and then connect them accordingly!</p>
+  </li>
+  <li>
+    <p>double click on R and rename according to the resistors used, 2 are 22k in our example, 10 k, 3 are 100k, 330k</p>
+  </li>
+  <li>Then we repeated the same process, for 2 capacitors and name one 10uF and the other 100uF</li>
+  <li>Then again for the LEDs (2) rename RED</li>
+  <li>Then lastly a transistor 2N3904</li>
+  <li>Kicad doesn’t have a battery holder or slide switch that we need for our board, so we can use a third party such as digi-key. So we got it from github.com/digikey/digikey-kicad-library repeat the same process as we have done for the fab library. Add this specific library from the file  :
+ <strong>dk_Battery-Holders-Clips-Contacts.lib</strong> and **</li>
+  <li>Press a on your keyboard and select <strong>BS-7</strong> battery from the new library you just added! Do the same for the slide switch <strong>EG1218</strong></li>
+  <li>Adding <strong>Flags</strong> helps, as it adds the effect of connecting things together without having to look at wires on the screen.Any node with a flag name is automatically connected to other nods with the same flag &amp;name. Powering ground flags on schematics &amp; VCCs (basically all the components wired to a common ground o vcc)</li>
+  <li>Add <strong>wires</strong> start with the GND on the far left and connect it to the negative battery pin, this tells Kicad that we intend for the negative battery terminal to be connected to all the other GND node pins</li>
+</ul>
+
+<p><img src="/images/GND_VCC_7555.png" alt="" />
+<em>Wires connected on the left side</em></p>
+
+<hr />
+
+<p><strong>Completed schematic plan</strong></p>
+
+<p><img src="/images/schematic_7555_comp.png" alt="" /></p>
+
+<hr />
+
+<h4 id="create-a-footprint-in-kicad">Create a footprint in KiCad</h4>
+
+<p>(Most probably won’t need to do that but thought I’d go along with the tutorial and learn it anyways!)</p>
+
+<ul>
+  <li>Open the <strong>INTERSIL</strong> datasheet</li>
+  <li>Go to tools &gt; create footprint</li>
+  <li>File &gt; new footprint and name it as ICM7555-PDIP as that will assoiciate it with the exact part from the intersil datasheet! and shows that we are using the plastic dual in-line package</li>
+  <li>File &gt; new library &gt; local &gt; make sure it is in the folder of your project and name it as 555_Badge. Note that .pretty stands for footprint library</li>
+  <li>Preferences &gt; manage footprint libraries and you will see that it is associated with the footprint library you just created</li>
+  <li>Units, when it comes to PCBs some datasheets will give you data in mm and others will give you data in inches and some will give them to you in both.</li>
+  <li>Create pads, go to place &gt; add pad then right click to give it a number and position it correctly. For the pad type choose through hole and choose circle for the pad shape as well as hole shope. Choose 0.03 for the hole size. Pad size in inch is 0.06. The specifications can be found on the datasheet! Always go for the max just to leave room for mistakes</li>
+  <li><strong>Outline</strong> Click place &gt; line, double click on the line to edit it. The thickness 0.004, start point 0.2 for x and 0.14 for y and end point 0.2 for x and - 0.14 for y, choose <strong>F.Fab</strong> layer</li>
+  <li>On the right side, click on F.Fab to change our layer, then add an arc in the middle, click and on the bottom you will see the x and y coordinate, press space to add a relative distance click at -0.2 and zero then click again at -0.2 and -0.05.Then edit its properties and make sure the angle is 180, also change the line thickness to 0.004</li>
+  <li>then add two vertical lines on top of the lines we have with thickness of 0.008 on layer silkscreen</li>
+  <li>Then add a small circle on the left bottom side with the width of 0.008</li>
+</ul>
+
+<p><img src="/images/footprint_555.png" alt="" /></p>
+
+<hr />
+
+<h4 id="associate-footprints-and-generate-netlist">Associate Footprints and Generate Netlist</h4>
+
+<ul>
+  <li>First press on <strong>run footprint assigment tool</strong> it will replace all the ? marks with numbers</li>
+  <li>Go to preferences &gt; manage symbol libraries and check if you have the global ones loaded</li>
+  <li>Go back to the runn footprint assigment tool, in there click preferences manage footprint libraries</li>
+  <li>Go to github.com/kicad and download the foot print reposotory and save it in the libraries folder, make a new foder there called kicad and add it there.</li>
+  <li>Add the footprint library from kicad reposotory as well as the digi key footprint one</li>
+  <li>on the left side you will see the new libraries loaded</li>
+  <li>You can filter footprints based on keywords or pin count or according to footprints available in a specific library</li>
+</ul>
+
+<p><img src="/images/footprint_associate.png" alt="" /></p>
+
+<ul>
+  <li>
+    <p>Do some research on the type of capacitor needed, we know that we want it to be aluminum electrolytic capacitor, through hole with 10uf, select those filters. on digi-key.com search for capacitor and add those filters</p>
+  </li>
+  <li>
+    <p>There are two types of through the hole parts : radial(extend from the radius of the cylinder) or axial(extend from the main axis of the cylinder)</p>
+  </li>
+</ul>
+
+<p><img src="/images/radial_v_axial.png" alt="" /></p>
+
+<ul>
+  <li>We are looking for a capacitor that is THT(through the hole) with a radial, 5 mm and pin spacing of 2 mm</li>
+  <li>Repeat same process for the capacitor with the 100uf (research, fine, attribute)</li>
+  <li>For the <strong>LED</strong> also through hole, D3.0</li>
+  <li><strong>Resistor</strong></li>
+</ul>
+
+<p><img src="/images/assigned_footprints.png" alt="" />
+<em>All the assigned footprints</em></p>
+
+<ul>
+  <li>Save!</li>
+</ul>
+
+<hr />
+
+<h4 id="place-parts-and-define-outline">Place parts and define Outline</h4>
+
+<ul>
+  <li>File &gt; page settings (fill it out the same as we did with the schematic)</li>
+  <li>Be mindful of units</li>
+  <li>Tools &gt; update pcv based on schematic</li>
+  <li>Head to https://oshpark.com/ to find information about the board we are making. There go to support &gt; see all docs &gt; KiCad &gt; Manually set the design rules</li>
+  <li>It would be helpful to put the design rules and the kicad folder side by side</li>
+  <li>Go to file &gt; board Setup &gt; Solder Mask/Paste to determin <strong>Solder Mask Clearance</strong> how much space there should be between the pad and the start of the solder mask, check the specifications on the website, 0.002</li>
+  <li><strong>Design Rules</strong> make sure do not allow micro vias is selected</li>
+  <li><strong>Via</strong> is like a through-hole(yet they are much smaller) in the board where the copper and substrate layers are drilled, copper is added using an electroplating process. They connect copper or traces between layers. Uvia stands for micro via. Make Clearance &amp; track a little bit bigger than the board houses minimum specifications, 0.01. Via diameter 0.03 and drill to 0.015</li>
+  <li>Move all parts so they are not piled on top of each other, the wire connecting them are called <em>air wires</em> they are helpful in figuring out how parts should be connected with traces. The entire group of <em>air wires</em> is known as <strong>ratsnest</strong> because it looks like a ratsnest</li>
+  <li>Show <em>boards ratsnest</em> to toggle between switching on and off the ratsnest</li>
+  <li>For drawing an <strong>outline</strong> move to the Edge.Cuts layer and select a line</li>
+</ul>
+:ET
