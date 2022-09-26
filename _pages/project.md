@@ -55,11 +55,11 @@ image:
 
 ### Videos
 
-<iframe src="https://vimeo.com/753835437" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/753836674?h=882bd9d00e" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/753836674">Kinetic Sculpture Experiment 02</a> from <a href="https://vimeo.com/user39185319">Farah Hijazi</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-<iframe src="https://vimeo.com/753836674" frameborder="0" allowfullscreen></iframe>
-
-
+<iframe src="https://player.vimeo.com/video/753835437?h=5ecae4aa8f" width="640" height="1138" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p><a href="https://vimeo.com/753835437">Kinetic Sculpture Experiment</a> from <a href="https://vimeo.com/user39185319">Farah Hijazi</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 ***
 
