@@ -35,7 +35,6 @@ image:
 
 * ![]({{ site.baseurl }}/images/base_01.jpg)
 * ![]({{ site.baseurl }}/images/base_02.jpg)
-* ![]({{ site.baseurl }}/images/base_02.jpg)
 * ![]({{ site.baseurl }}/images/blue_yellow_acrylic.jpg)
 * ![]({{ site.baseurl }}/images/flex_fil_blue.jpg)
 * ![]({{ site.baseurl }}/images/flexible_Fil.jpg)
