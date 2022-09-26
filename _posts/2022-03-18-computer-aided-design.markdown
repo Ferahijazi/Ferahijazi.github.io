@@ -46,10 +46,25 @@ Ways of Planning Your Design
 *Biomimicry in Architecture, p.48*
 
 ---
+##### 3D Bodies types : 
+
+A 3D Shape used to add or remove geometry 
+
+* Mesh body - imported as stl or obj, popular among 3D printing platforms 
+* Form body - gives more control in pushing and pulling the shapes, once you finish the form it will turn into a surface body
+* Surface body
+* Solid body
+----
+
+#### Component
+
+A part or a container used within an assembly 
+
+---
 
 ### Side Hustle 
 
-Hazel & I prepared some molds by cutting and melting blocks of acrylic then putting them inside containers
+Hazal & I prepared some molds by cutting and melting blocks of acrylic then putting them inside containers
 
 ![]({{ site.baseurl }}/images/melting_01.jpg)
 *Some dangerous cooking*
