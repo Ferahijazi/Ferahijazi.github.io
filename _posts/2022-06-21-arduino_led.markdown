@@ -72,44 +72,10 @@ setup:
 
 ---
 
-{% Video pontimeter_green_red_yellow.mp4 500 400 %}
 
-class Video < Liquid::Tag
-  Syntax = /^\s*([^\s]+)(\s+(\d+)\s+(\d+)\s*)?/
 
-  def initialize(tagName, markup, tokens)
-    super
+   
 
-    @url = Jekyll.configuration({})['https://github.com/Ferahijazi/Ferahijazi.github.io.git'] || 'https://ferahijazi.github.io/'
-
-    if markup =~ Syntax then
-      @id = $1
-
-      if $2.nil? then
-          @width = 560
-          @height = 420
-      else
-          @width = $2.to_i
-          @height = $3.to_i
-      end
-    else
-      raise "No Video Source provided"
-    end
-
-  end
-
-  def lookup(context, name)
-    lookup = context
-    name.split(".").each { |value| lookup = lookup[value] }
-    lookup
-  end
-
-  def render(context)
-     "<iframe width=\"#{@width}\" height=\"#{@height}\" src=\"#{@base_url}/#{@id}\" ></iframe>"
-  end
-
-  Liquid::Template.register_tag "Video", self
-end
 
 ---
 

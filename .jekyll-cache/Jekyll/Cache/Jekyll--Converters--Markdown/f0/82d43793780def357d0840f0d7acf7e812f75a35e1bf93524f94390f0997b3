@@ -1,0 +1,54 @@
+I"?<ul>
+  <li>Idea for project : an interactive installation, experienced by two people at a time</li>
+  <li>Things to consider, how to nicley hide all the wires yet get the effect desired</li>
+  <li>Kinetic sculpture</li>
+</ul>
+
+<hr />
+
+<h1 id="arduino-board">Arduino Board</h1>
+
+<ul>
+  <li>Tilt sensor with 2 servos</li>
+</ul>
+
+<h4 id="steps-">Steps :</h4>
+
+<h5 id="hardware-">Hardware :</h5>
+
+<p><img src="/images/Screenshot 2022-09-02 at 10.37.36.png" alt="" />
+<strong>Servo and titl sensor</strong></p>
+
+<p>** Place the <strong>tilt sensor</strong> on the breadboard, connect the pins, one to the - on the board, keep middle empty, the last to the arduino, one of the digital pins. To know which is ground and which is power, refer back to the manual.</p>
+
+<p>** Then add a resistor with 10 kΩ connecting from the + side of the tilt sensor</p>
+
+<ul>
+  <li>Tilt sensor with passive buzzers + adding different tones</li>
+  <li>Using the magic cup tilt sensor for lights</li>
+</ul>
+
+<h1 id="design-wise">Design wise</h1>
+
+<ul>
+  <li><img src="/images/base_01.jpg" alt="" /></li>
+  <li><img src="/images/base_02.jpg" alt="" /></li>
+  <li><img src="/images/base_02.jpg" alt="" /></li>
+  <li><img src="/images/blue_yellow_acrylic.jpg" alt="" /></li>
+  <li><img src="/images/flex_fil_blue.jpg" alt="" /></li>
+  <li><img src="/images/flexible_Fil.jpg" alt="" /></li>
+</ul>
+
+<hr />
+
+<hr />
+
+<h3 id="videos">Videos</h3>
+
+<iframe src="https://vimeo.com/753835437" frameborder="0" allowfullscreen=""></iframe>
+
+<iframe src="https://vimeo.com/753836674" frameborder="0" allowfullscreen=""></iframe>
+
+<hr />
+
+:ET
