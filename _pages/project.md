@@ -6,8 +6,9 @@ image:
 ---
 
 
-* Idea for project : an interactive installation, experienced two people at a time
+* Idea for project : an interactive installation, experienced by two people at a time
 * Things to consider, how to nicley hide all the wires yet get the effect desired 
+* Kinetic sculpture
 
 ***
 
@@ -32,74 +33,33 @@ image:
 
 # Design wise
 
-* Some 
+* ![]({{ site.baseurl }}/images/base_01.jpg)
+* ![]({{ site.baseurl }}/images/base_02.jpg)
+* ![]({{ site.baseurl }}/images/base_02.jpg)
+* ![]({{ site.baseurl }}/images/blue_yellow_acrylic.jpg)
+* ![]({{ site.baseurl }}/images/flex_fil_blue.jpg)
+* ![]({{ site.baseurl }}/images/flexible_Fil.jpg)
+
+
+
+
+***
+
+
 
 
 
 ***
 
-### Lists
 
-#### Ordered list example:
-
-1. Poutine drinking vinegar bitters.
-2. Coloring book distillery fanny pack.
-3. Venmo biodiesel gentrify enamel pin meditation.
-4. Jean shorts shaman listicle pickled portland.
-5. Salvia mumblecore brunch iPhone migas.
-
-***
-
-#### Unordered list example:
-
-* Bitters semiotics vice thundercats synth.
-* Literally cred narwhal bitters wayfarers.
-* Kale chips chartreuse paleo tbh street art marfa.
-* Mlkshk polaroid sriracha brooklyn.
-* Pug you probably haven't heard of them air plant man bun.
-
-{% highlight markdown %}
-1. Order list item 1
-2. Order list item 1
-
-* Unordered list item 1
-* Unordered list item 2
-{% endhighlight %}
-
-***
-
-### Quotes
-
-> Coming together is a beginning; keeping together is progress; working together is success. — Edward Everett Hale
-
-***
-
-### Syntax Highlighter
-
-{% highlight js %}
-  $('.top').click(function () {
-    $('html, body').stop().animate({ scrollTop: 0 }, 'slow', 'swing');
-  });
-  $(window).scroll(function () {
-    if ($(this).scrollTop() > $(window).height()) {
-      $('.top').addClass("top-active");
-    } else {
-      $('.top').removeClass("top-active");
-    };
-  });
-{% endhighlight %}
-
-***
 
 ### Videos
 
-<iframe src="https://www.youtube.com/embed/iWowJBRMtpc" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://vimeo.com/753835437" frameborder="0" allowfullscreen></iframe>
+
+<iframe src="https://vimeo.com/753836674" frameborder="0" allowfullscreen></iframe>
+
+
 
 ***
 
-### Images
-
-![]({{site.baseurl}}/images/09.jpg)
-*Backyard*
-
-***
